@@ -1,0 +1,20 @@
+{
+  "symptom_code": "physSx_5",
+  "symptom_name": "Chest pain",
+  "best_model": "LR-ElasticNet",
+  "balanced_accuracy": 0.63,
+  "roc_auc": 0.68,
+  "f1_score": 0.58,
+  "timestamp": "2025-11-14T10:21:48.903388",
+  "hyperparameters": {
+    "n_estimators": 497,
+    "max_depth": 11,
+    "learning_rate": 0.05425516645290513,
+    "min_child_weight": 1,
+    "subsample": 0.9209462859838841,
+    "colsample_bytree": 0.556995731698247,
+    "gamma": 0.20536876759619754,
+    "reg_alpha": 1.5555585997547223,
+    "reg_lambda": 9.203901365394726
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "symptom_code": "physSx_7",
+  "symptom_name": "Fainting spells",
+  "best_model": "LR-ElasticNet",
+  "balanced_accuracy": 0.6,
+  "roc_auc": 0.62,
+  "f1_score": 0.48,
+  "timestamp": "2025-11-14T10:21:49.118602",
+  "hyperparameters": {
+    "n_estimators": 522,
+    "max_depth": 7,
+    "learning_rate": 0.043144996274865906,
+    "min_child_weight": 2,
+    "subsample": 0.786223198682853,
+    "colsample_bytree": 0.9456814816224994,
+    "gamma": 0.16082793094168876,
+    "reg_alpha": 0.3146494164780097,
+    "reg_lambda": 2.693095090847274
+  }
+}

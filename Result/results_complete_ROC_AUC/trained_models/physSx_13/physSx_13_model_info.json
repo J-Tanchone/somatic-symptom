@@ -1,0 +1,20 @@
+{
+  "symptom_code": "physSx_13",
+  "symptom_name": "Trouble sleeping",
+  "best_model": "LR-ElasticNet",
+  "balanced_accuracy": 0.64,
+  "roc_auc": 0.7,
+  "f1_score": 0.62,
+  "timestamp": "2025-11-14T10:08:05.906635",
+  "hyperparameters": {
+    "n_estimators": 552,
+    "max_depth": 9,
+    "learning_rate": 0.09404883565257852,
+    "min_child_weight": 5,
+    "subsample": 0.7715305995384173,
+    "colsample_bytree": 0.5676376610224968,
+    "gamma": 0.3056037216494684,
+    "reg_alpha": 5.113237212458504,
+    "reg_lambda": 6.00241164751386
+  }
+}

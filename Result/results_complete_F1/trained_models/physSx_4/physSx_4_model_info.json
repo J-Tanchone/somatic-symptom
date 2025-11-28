@@ -1,0 +1,20 @@
+{
+  "symptom_code": "physSx_4",
+  "symptom_name": "Headache",
+  "best_model": "StackingEnsemble",
+  "balanced_accuracy": 0.573,
+  "roc_auc": 0.685,
+  "f1_score": 0.806,
+  "timestamp": "2025-11-14T10:21:48.880123",
+  "hyperparameters": {
+    "n_estimators": 768,
+    "max_depth": 9,
+    "learning_rate": 0.021121657925202684,
+    "min_child_weight": 2,
+    "subsample": 0.9429431787151664,
+    "colsample_bytree": 0.8753602718771364,
+    "gamma": 0.9644940988735649,
+    "reg_alpha": 1.8134438246343538,
+    "reg_lambda": 8.688453044787147
+  }
+}

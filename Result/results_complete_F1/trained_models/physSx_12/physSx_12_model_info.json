@@ -1,0 +1,20 @@
+{
+  "symptom_code": "physSx_12",
+  "symptom_name": "Fatigue",
+  "best_model": "StackingEnsemble",
+  "balanced_accuracy": 0.535,
+  "roc_auc": 0.765,
+  "f1_score": 0.934,
+  "timestamp": "2025-11-14T10:21:48.841095",
+  "hyperparameters": {
+    "n_estimators": 485,
+    "max_depth": 8,
+    "learning_rate": 0.12400816125045114,
+    "min_child_weight": 2,
+    "subsample": 0.7971937716204041,
+    "colsample_bytree": 0.850586514727917,
+    "gamma": 0.24985022332283283,
+    "reg_alpha": 0.19073911781142489,
+    "reg_lambda": 0.7465110936891086
+  }
+}

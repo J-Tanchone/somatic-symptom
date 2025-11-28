@@ -1,0 +1,20 @@
+{
+  "symptom_code": "physSx_3",
+  "symptom_name": "Limb/joint pain",
+  "best_model": "TabNet-Deep",
+  "balanced_accuracy": 0.604,
+  "roc_auc": 0.625,
+  "f1_score": 0.624,
+  "timestamp": "2025-11-14T10:21:49.104111",
+  "hyperparameters": {
+    "n_estimators": 425,
+    "max_depth": 4,
+    "learning_rate": 0.036948376672095856,
+    "min_child_weight": 3,
+    "subsample": 0.525631815990869,
+    "colsample_bytree": 0.9165484263161893,
+    "gamma": 2.7526368874199023,
+    "reg_alpha": 7.40829028614676,
+    "reg_lambda": 7.510882509824126
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "symptom_code": "physSx_10",
+  "symptom_name": "Constipation",
+  "best_model": "ExtraTrees",
+  "balanced_accuracy": 0.566,
+  "roc_auc": 0.613,
+  "f1_score": 0.43,
+  "timestamp": "2025-11-14T10:08:06.108216",
+  "hyperparameters": {
+    "n_estimators": 553,
+    "max_depth": 9,
+    "learning_rate": 0.03890776520477761,
+    "min_child_weight": 1,
+    "subsample": 0.6192966039516642,
+    "colsample_bytree": 0.7784336907504763,
+    "gamma": 0.10655806425768524,
+    "reg_alpha": 0.8666123225728225,
+    "reg_lambda": 7.825654745049177
+  }
+}

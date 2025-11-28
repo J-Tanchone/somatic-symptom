@@ -1,0 +1,196 @@
+Symptom_Code,Symptom_Name,Model,Feature,Mean_Abs_SHAP
+physSx_1,Stomach pain,LR-ElasticNet,idea_m_std,0.2163534809883276
+physSx_1,Stomach pain,LR-ElasticNet,social_new_m_std,0.22160721624375357
+physSx_1,Stomach pain,LR-ElasticNet,mindful_m_std,0.23051893733655593
+physSx_1,Stomach pain,LR-ElasticNet,idea_m_min,0.2568844641162135
+physSx_1,Stomach pain,LR-ElasticNet,stress_m_squared,0.2724634427835962
+physSx_1,Stomach pain,LR-ElasticNet,transgres_m_max,0.2843471501977796
+physSx_1,Stomach pain,LR-ElasticNet,sex_1.0,0.2846768769009971
+physSx_1,Stomach pain,LR-ElasticNet,stress_amplification,0.2944060283577364
+physSx_1,Stomach pain,LR-ElasticNet,mindful_m_squared,0.30233343087362535
+physSx_1,Stomach pain,LR-ElasticNet,swb_m_std,0.3045489246461226
+physSx_1,Stomach pain,LR-ElasticNet,achievement_stress_interaction,0.316975937061468
+physSx_1,Stomach pain,LR-ElasticNet,belong_m_log,0.3189430212516842
+physSx_1,Stomach pain,LR-ElasticNet,low_efficacy_high_stress,0.3361256907766198
+physSx_1,Stomach pain,LR-ElasticNet,achievement_gap,0.4411731004166967
+physSx_1,Stomach pain,LR-ElasticNet,swb_m_min,0.5187646506665153
+physSx_2,Back pain,LR-ElasticNet,disability_m_std,0.18447345327344308
+physSx_2,Back pain,LR-ElasticNet,social_conn_m_std,0.18485860193324052
+physSx_2,Back pain,LR-ElasticNet,stress_m_log,0.18651230604673202
+physSx_2,Back pain,LR-ElasticNet,belong_m_squared,0.2041593040423388
+physSx_2,Back pain,LR-ElasticNet,catastrophizing_score,0.26052063965714317
+physSx_2,Back pain,LR-ElasticNet,support_m_max,0.26595530435295484
+physSx_2,Back pain,LR-ElasticNet,social_conn_m_max,0.29697703748502846
+physSx_2,Back pain,LR-ElasticNet,social_new_m_min,0.2975437867160442
+physSx_2,Back pain,LR-ElasticNet,swb_m_squared,0.31010807072106494
+physSx_2,Back pain,LR-ElasticNet,social_new_m_max,0.3215857106713647
+physSx_2,Back pain,LR-ElasticNet,support_m_std,0.3496354767125114
+physSx_2,Back pain,LR-ElasticNet,support_m_min,0.3668588493189006
+physSx_2,Back pain,LR-ElasticNet,social_new_m_std,0.39403517814483285
+physSx_2,Back pain,LR-ElasticNet,support_m_squared,0.6674278800411682
+physSx_2,Back pain,LR-ElasticNet,stress_support_interaction,0.6926000171906276
+physSx_3,Limb/joint pain,RandomForest,catastrophizing_score,0.004078998779653706
+physSx_3,Limb/joint pain,RandomForest,swb_m_sqrt,0.00411492031519656
+physSx_3,Limb/joint pain,RandomForest,mindful_m,0.004283759198372381
+physSx_3,Limb/joint pain,RandomForest,sex_stress,0.0044507687978678975
+physSx_3,Limb/joint pain,RandomForest,mindful_m_squared,0.0045552055512217155
+physSx_3,Limb/joint pain,RandomForest,swb_m,0.005131875176232928
+physSx_3,Limb/joint pain,RandomForest,swb_m_log,0.005344792429468019
+physSx_3,Limb/joint pain,RandomForest,stress_amplification,0.0054992870066955905
+physSx_3,Limb/joint pain,RandomForest,health_anxiety_proxy,0.005871284318746958
+physSx_3,Limb/joint pain,RandomForest,swb_m_squared,0.006377065158995996
+physSx_3,Limb/joint pain,RandomForest,overall_std,0.006567476121089091
+physSx_3,Limb/joint pain,RandomForest,transgres_m_max,0.007692561712182819
+physSx_3,Limb/joint pain,RandomForest,emotional_awareness_deficit,0.00872293987459846
+physSx_3,Limb/joint pain,RandomForest,transgres_m,0.00906331128946928
+physSx_3,Limb/joint pain,RandomForest,somatization_proneness,0.011325287934694839
+physSx_4,Headache,ExtraTrees,achievement_gap,0.1571643295814801
+physSx_4,Headache,ExtraTrees,moa_achievement_m,0.16844471665148278
+physSx_4,Headache,ExtraTrees,support_m_log,0.18655912796040283
+physSx_4,Headache,ExtraTrees,achievement_stress_interaction,0.2107371249653465
+physSx_4,Headache,ExtraTrees,social_new_m_std,0.21208358402350014
+physSx_4,Headache,ExtraTrees,swb_m_log,0.21532932549857
+physSx_4,Headache,ExtraTrees,social_new_m_min,0.21565995099278842
+physSx_4,Headache,ExtraTrees,stress_m_log,0.2161641864881425
+physSx_4,Headache,ExtraTrees,sex_2.0,0.21852707112468728
+physSx_4,Headache,ExtraTrees,social_new_m_max,0.27062403795694856
+physSx_4,Headache,ExtraTrees,transgres_m_std,0.30192133788630454
+physSx_4,Headache,ExtraTrees,stress_amplification,0.3229013098491368
+physSx_4,Headache,ExtraTrees,transgres_m_max,0.3279151321262617
+physSx_4,Headache,ExtraTrees,swb_m_squared,0.3925091930327046
+physSx_4,Headache,ExtraTrees,stress_support_interaction,0.669987514668083
+physSx_5,Chest pain,LR-ElasticNet,social_conn_m,0.3298833406201235
+physSx_5,Chest pain,LR-ElasticNet,social_new_m_max,0.342356478041505
+physSx_5,Chest pain,LR-ElasticNet,efficacy_m_log,0.36433060037959397
+physSx_5,Chest pain,LR-ElasticNet,social_new_m_std,0.3645623110306947
+physSx_5,Chest pain,LR-ElasticNet,mindful_m_log,0.366387439295879
+physSx_5,Chest pain,LR-ElasticNet,achievement_gap_squared,0.3751303604924251
+physSx_5,Chest pain,LR-ElasticNet,social_conn_m_std,0.37994330740198623
+physSx_5,Chest pain,LR-ElasticNet,support_m_squared,0.38070300559032644
+physSx_5,Chest pain,LR-ElasticNet,achievement_gap,0.38589335956089504
+physSx_5,Chest pain,LR-ElasticNet,stress_support_interaction,0.43040318144050116
+physSx_5,Chest pain,LR-ElasticNet,social_new_m_min,0.432193438275033
+physSx_5,Chest pain,LR-ElasticNet,achievement_stress_interaction,0.43686826647751514
+physSx_5,Chest pain,LR-ElasticNet,low_efficacy_high_stress,0.4467897329819639
+physSx_5,Chest pain,LR-ElasticNet,belong_m_log,0.4857777465198104
+physSx_5,Chest pain,LR-ElasticNet,social_conn_m_min,0.4899699315810084
+physSx_6,Dizziness,ExtraTrees,sex_1.0,0.21854676626280078
+physSx_6,Dizziness,ExtraTrees,efficacy_belong_interaction,0.2330060253299381
+physSx_6,Dizziness,ExtraTrees,support_m_squared,0.23364735690604643
+physSx_6,Dizziness,ExtraTrees,transgres_m_max,0.23442678519610008
+physSx_6,Dizziness,ExtraTrees,swb_m_log,0.247056504906213
+physSx_6,Dizziness,ExtraTrees,stress_amplification,0.26048926605600853
+physSx_6,Dizziness,ExtraTrees,social_new_m,0.3037706525774842
+physSx_6,Dizziness,ExtraTrees,belong_m_log,0.35566646488436393
+physSx_6,Dizziness,ExtraTrees,swb_m_min,0.3983897882855256
+physSx_6,Dizziness,ExtraTrees,exploit_m_min,0.41297211617995333
+physSx_6,Dizziness,ExtraTrees,achievement_gap_squared,0.41316125071383514
+physSx_6,Dizziness,ExtraTrees,perfectionism_stress,0.4312502941726014
+physSx_6,Dizziness,ExtraTrees,stress_support_interaction,0.4566588994714482
+physSx_6,Dizziness,ExtraTrees,exploit_m_std,0.5734655242456648
+physSx_6,Dizziness,ExtraTrees,exploit_m_max,0.887178233017159
+physSx_7,Fainting spells,StackingEnsemble,disability_m_std,0.44980423178975315
+physSx_7,Fainting spells,StackingEnsemble,emotional_awareness_deficit,0.4502561363379008
+physSx_7,Fainting spells,StackingEnsemble,social_new_m_max,0.45570729694224676
+physSx_7,Fainting spells,StackingEnsemble,catastrophizing_score,0.4847646742756803
+physSx_7,Fainting spells,StackingEnsemble,achievement_gap_squared,0.49362404166414653
+physSx_7,Fainting spells,StackingEnsemble,perfectionism_stress,0.4982749965939471
+physSx_7,Fainting spells,StackingEnsemble,swb_m,0.5134567362937088
+physSx_7,Fainting spells,StackingEnsemble,stress_support_interaction,0.6088859278359307
+physSx_7,Fainting spells,StackingEnsemble,exploit_m,0.6104499222103531
+physSx_7,Fainting spells,StackingEnsemble,sex_1.0,0.6463544419101201
+physSx_7,Fainting spells,StackingEnsemble,sex_stress,0.7482242765944828
+physSx_7,Fainting spells,StackingEnsemble,belong_m_squared,0.809294683586427
+physSx_7,Fainting spells,StackingEnsemble,social_new_m,0.9110460925346119
+physSx_7,Fainting spells,StackingEnsemble,transgres_m_std,1.0098372226552899
+physSx_7,Fainting spells,StackingEnsemble,transgres_m_max,1.072301211964371
+physSx_8,Heart pound/race,LR-ElasticNet,idea_m_std,0.16407064507570054
+physSx_8,Heart pound/race,LR-ElasticNet,moa_achievement_m_std,0.17196121760785874
+physSx_8,Heart pound/race,LR-ElasticNet,belong_m_squared,0.17226564324220084
+physSx_8,Heart pound/race,LR-ElasticNet,belong_m_min,0.18589331783370985
+physSx_8,Heart pound/race,LR-ElasticNet,belong_m_std,0.18843906767176463
+physSx_8,Heart pound/race,LR-ElasticNet,efficacy_belong_interaction,0.19806310390315382
+physSx_8,Heart pound/race,LR-ElasticNet,sex_1.0,0.20610071260788446
+physSx_8,Heart pound/race,LR-ElasticNet,moa_importance_m_std,0.21387545476103484
+physSx_8,Heart pound/race,LR-ElasticNet,idea_m_min,0.2423292498518299
+physSx_8,Heart pound/race,LR-ElasticNet,transgres_m,0.2519505677455823
+physSx_8,Heart pound/race,LR-ElasticNet,achievement_gap,0.26264911347062064
+physSx_8,Heart pound/race,LR-ElasticNet,stress_m_log,0.26810075333283695
+physSx_8,Heart pound/race,LR-ElasticNet,mindful_m_squared,0.35157513925926925
+physSx_8,Heart pound/race,LR-ElasticNet,mindful_m_log,0.3706130901114514
+physSx_8,Heart pound/race,LR-ElasticNet,achievement_stress_interaction,0.4252204112451638
+physSx_9,Shortness of breath,ExtraTrees,social_conn_m_max,0.15549190233642723
+physSx_9,Shortness of breath,ExtraTrees,moa_importance_m_std,0.1601095010347808
+physSx_9,Shortness of breath,ExtraTrees,social_new_m_max,0.17274403851430487
+physSx_9,Shortness of breath,ExtraTrees,overall_std,0.18502789795419822
+physSx_9,Shortness of breath,ExtraTrees,sex_1.0,0.18860005825253584
+physSx_9,Shortness of breath,ExtraTrees,support_m_min,0.19505475338138714
+physSx_9,Shortness of breath,ExtraTrees,belong_m_log,0.21936941092557882
+physSx_9,Shortness of breath,ExtraTrees,disability_m,0.24354466977772893
+physSx_9,Shortness of breath,ExtraTrees,mindful_m_squared,0.2507676975053369
+physSx_9,Shortness of breath,ExtraTrees,efficacy_belong_interaction,0.25122330267643944
+physSx_9,Shortness of breath,ExtraTrees,moa_achievement_m_std,0.2514393793068768
+physSx_9,Shortness of breath,ExtraTrees,support_m_std,0.28052797519387634
+physSx_9,Shortness of breath,ExtraTrees,mindful_m_log,0.28574442810363165
+physSx_9,Shortness of breath,ExtraTrees,health_anxiety_proxy,0.36468811959717096
+physSx_9,Shortness of breath,ExtraTrees,social_new_m,0.3865919937876207
+physSx_10,Constipation,ExtraTrees,efficacy_m_min,0.17790716045626434
+physSx_10,Constipation,ExtraTrees,achievement_gap,0.17801666461259139
+physSx_10,Constipation,ExtraTrees,stress_m_squared,0.20255252654378336
+physSx_10,Constipation,ExtraTrees,belong_m_log,0.21719157826240448
+physSx_10,Constipation,ExtraTrees,swb_m_std,0.22306530048130035
+physSx_10,Constipation,ExtraTrees,sex_stress,0.2302105258564115
+physSx_10,Constipation,ExtraTrees,idea_m_min,0.24733755644357425
+physSx_10,Constipation,ExtraTrees,stress_m_log,0.2603062306117626
+physSx_10,Constipation,ExtraTrees,stress_support_ratio,0.27568771581248647
+physSx_10,Constipation,ExtraTrees,efficacy_belong_interaction,0.3020309004299373
+physSx_10,Constipation,ExtraTrees,stress_support_interaction,0.3029932461583939
+physSx_10,Constipation,ExtraTrees,swb_m_min,0.32986484879658673
+physSx_10,Constipation,ExtraTrees,perfectionism_stress,0.35925141196564975
+physSx_10,Constipation,ExtraTrees,achievement_gap_squared,0.36535491287575167
+physSx_10,Constipation,ExtraTrees,belong_m_squared,0.418685174773753
+physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,emotional_awareness_deficit,0.05661170952254928
+physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,swb_m,0.056899355776323546
+physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,overall_kurtosis,0.06440752341969412
+physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,overall_mean,0.06887451605651217
+physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,belong_m_std,0.06905018796615635
+physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,support_m_std,0.07073052648090639
+physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,social_isolation,0.07102189766148419
+physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,overall_std,0.07454355346073217
+physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,somatization_proneness,0.07471714525530779
+physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,idea_m,0.07574668636504076
+physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,mindful_m_std,0.08620534859853302
+physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,stress_m_std,0.10332031112706161
+physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,disability_m_std,0.12139739042420472
+physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,stress_amplification,0.1351984196168202
+physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,sex_stress,0.15377914431001283
+physSx_12,Fatigue,RandomForest,mindful_m_sqrt,0.004446890182939642
+physSx_12,Fatigue,RandomForest,health_anxiety_proxy,0.004704599475369591
+physSx_12,Fatigue,RandomForest,belong_m_std,0.0047102273832742405
+physSx_12,Fatigue,RandomForest,mindful_m_log,0.0048271408897511345
+physSx_12,Fatigue,RandomForest,mindful_m,0.004977715109814845
+physSx_12,Fatigue,RandomForest,overall_std,0.005070225240386474
+physSx_12,Fatigue,RandomForest,swb_m,0.005286063793799911
+physSx_12,Fatigue,RandomForest,swb_m_squared,0.0053262315529469416
+physSx_12,Fatigue,RandomForest,somatization_proneness,0.006119997216972131
+physSx_12,Fatigue,RandomForest,swb_m_sqrt,0.006274484389284742
+physSx_12,Fatigue,RandomForest,emotional_awareness_deficit,0.006584475465749371
+physSx_12,Fatigue,RandomForest,disability_m_std,0.007526699172332293
+physSx_12,Fatigue,RandomForest,sex_2.0,0.007567124794200588
+physSx_12,Fatigue,RandomForest,sex_1.0,0.014864871775039071
+physSx_12,Fatigue,RandomForest,sex_stress,0.020753702696399003
+physSx_13,Trouble sleeping,LR-ElasticNet,efficacy_belong_interaction,0.16924056697201842
+physSx_13,Trouble sleeping,LR-ElasticNet,efficacy_m_max,0.17750327640751346
+physSx_13,Trouble sleeping,LR-ElasticNet,support_m_min,0.1884677227537124
+physSx_13,Trouble sleeping,LR-ElasticNet,catastrophizing_score,0.19110999347251303
+physSx_13,Trouble sleeping,LR-ElasticNet,exploit_m_min,0.19118318559602074
+physSx_13,Trouble sleeping,LR-ElasticNet,exploit_m,0.21588601455042258
+physSx_13,Trouble sleeping,LR-ElasticNet,stress_support_interaction,0.24928335076666522
+physSx_13,Trouble sleeping,LR-ElasticNet,belong_m_log,0.2521112021984268
+physSx_13,Trouble sleeping,LR-ElasticNet,efficacy_m_log,0.2577416296984878
+physSx_13,Trouble sleeping,LR-ElasticNet,disability_m_max,0.32609169717403663
+physSx_13,Trouble sleeping,LR-ElasticNet,support_m_squared,0.34997673571771154
+physSx_13,Trouble sleeping,LR-ElasticNet,disability_m_std,0.3560313274417425
+physSx_13,Trouble sleeping,LR-ElasticNet,belong_m_squared,0.35821070912044495
+physSx_13,Trouble sleeping,LR-ElasticNet,efficacy_m_squared,0.36827077045802326
+physSx_13,Trouble sleeping,LR-ElasticNet,swb_m_squared,0.3841089339610835

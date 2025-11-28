@@ -1,0 +1,14 @@
+Symptom,Model,Balanced_Accuracy,ROC_AUC,F1_Score,Accuracy,Symptom_Name
+physSx_12,StackingEnsemble,0.535,0.765,0.934,,Fatigue
+physSx_8,LR-ElasticNet,0.63,0.7,0.63,0.63,Heart pound/race
+physSx_4,StackingEnsemble,0.573,0.685,0.806,,Headache
+physSx_5,LR-ElasticNet,0.63,0.68,0.58,0.64,Chest pain
+physSx_6,LR-ElasticNet,0.62,0.68,0.61,0.63,Dizziness
+physSx_9,LR-ElasticNet,0.63,0.68,0.62,0.64,Shortness of breath
+physSx_13,StackingEnsemble,0.588,0.679,0.817,,Trouble sleeping
+physSx_1,LR-ElasticNet,0.61,0.65,0.61,0.62,Stomach pain
+physSx_11,TabNet-Deep,0.62,0.629,0.652,,Nausea/gas/indigestion
+physSx_3,TabNet-Deep,0.604,0.625,0.624,,Limb/joint pain
+physSx_7,LR-ElasticNet,0.6,0.62,0.48,0.66,Fainting spells
+physSx_2,StackingEnsemble,0.579,0.609,0.672,,Back pain
+physSx_10,LR-ElasticNet,0.56,0.57,0.56,0.57,Constipation

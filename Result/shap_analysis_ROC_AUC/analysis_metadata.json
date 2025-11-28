@@ -1,0 +1,35 @@
+{
+  "analysis_date": "2025-11-18 21:40:36",
+  "selection_criterion": "ROC_AUC",
+  "num_symptoms_analyzed": 13,
+  "symptoms": [
+    "physSx_1",
+    "physSx_2",
+    "physSx_3",
+    "physSx_4",
+    "physSx_5",
+    "physSx_6",
+    "physSx_7",
+    "physSx_8",
+    "physSx_9",
+    "physSx_10",
+    "physSx_11",
+    "physSx_12",
+    "physSx_13"
+  ],
+  "best_models": {
+    "physSx_1": "LR-ElasticNet",
+    "physSx_2": "LR-ElasticNet",
+    "physSx_3": "RandomForest",
+    "physSx_4": "ExtraTrees",
+    "physSx_5": "LR-ElasticNet",
+    "physSx_6": "ExtraTrees",
+    "physSx_7": "StackingEnsemble",
+    "physSx_8": "LR-ElasticNet",
+    "physSx_9": "ExtraTrees",
+    "physSx_10": "ExtraTrees",
+    "physSx_11": "XGBoost-Optimized",
+    "physSx_12": "RandomForest",
+    "physSx_13": "LR-ElasticNet"
+  }
+}
