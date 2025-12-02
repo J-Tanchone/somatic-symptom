@@ -599,7 +599,7 @@ def create_shap_plot(shap_values, X_data, feature_names, symptom_name, model_nam
         top_15 = predictor_importance.tail(15)
 
         fig, ax = plt.subplots(figsize=(10, 8))
-        colors = plt.cm.RdYlGn_r(top_15['Mean_Abs_SHAP'] / top_15['Mean_Abs_SHAP'].max())
+        colors = plt.cm.Blues(top_15['Mean_Abs_SHAP'] / top_15['Mean_Abs_SHAP'].max())
         bars = ax.barh(range(len(top_15)), top_15['Mean_Abs_SHAP'])
 
         for bar, color in zip(bars, colors):
