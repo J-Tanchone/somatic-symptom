@@ -1,0 +1,96 @@
+/* APA Style for Quarto */
+
+/* Body text */
+body {
+  font-family: Times New Roman, serif;
+  font-size: 12pt;
+  line-height: 2;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 16pt;
+  text-align: center;
+}
+
+h2 {
+  font-size: 14pt;
+}
+
+h3 {
+  font-size: 12pt;
+  font-style: italic;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  margin-bottom: 2em;
+  font-family: Times New Roman, serif;
+}
+
+/* Top and bottom borders of table */
+table thead tr:first-child th {
+  border-top: 1px solid #000;
+}
+
+table thead tr:last-child th {
+  border-bottom: 1px solid #000;
+}
+
+/* Bottom border of table */
+table tbody tr:last-child td {
+  border-bottom: 1px solid #000;
+}
+
+/* Remove all other borders */
+table td, table th {
+  border: none;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Text alignment for numeric columns */
+table td:not(:first-child) {
+  text-align: right;
+}
+
+/* Figures */
+figure {
+  margin: 2em 0;
+}
+
+figure img {
+  display: block;
+  margin: 0 auto;
+}
+
+figcaption {
+  font-style: italic;
+  text-align: left;
+  margin-top: 0.5em;
+}
+
+/* References and citations */
+#references {
+  margin-top: 2em;
+}
+
+.hanging-indent {
+  padding-left: 2em;
+  text-indent: -2em;
+}
+
+/* Code blocks */
+pre, code {
+  font-family: Consolas, monospace;
+  font-size: 10pt;
+}
