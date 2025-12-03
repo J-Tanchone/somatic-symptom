@@ -1,20 +1,13 @@
 {
   "symptom_code": "physSx_9",
   "symptom_name": "Shortness of breath",
-  "best_model": "LR-ElasticNet",
-  "balanced_accuracy": 0.63,
-  "roc_auc": 0.68,
-  "f1_score": 0.62,
-  "timestamp": "2025-11-14T10:21:48.989852",
+  "best_model": "LR-L1",
+  "balanced_accuracy": 0.639,
+  "roc_auc": 0.683,
+  "f1_score": 0.535,
+  "timestamp": "2025-12-03T02:19:03.363915",
   "hyperparameters": {
-    "n_estimators": 729,
-    "max_depth": 12,
-    "learning_rate": 0.005789961565556494,
-    "min_child_weight": 1,
-    "subsample": 0.8507752852440165,
-    "colsample_bytree": 0.6455629707777464,
-    "gamma": 0.8456760987559657,
-    "reg_alpha": 0.5060258328928932,
-    "reg_lambda": 1.3803451459753198
+    "C": 0.1,
+    "penalty": "l1"
   }
 }

@@ -1,14 +1,14 @@
-Symptom,Model,Balanced_Accuracy,ROC_AUC,F1_Score,Accuracy,Symptom_Name
-physSx_12,StackingEnsemble,0.535,0.765,0.934,,Fatigue
-physSx_8,LR-ElasticNet,0.63,0.7,0.63,0.63,Heart pound/race
-physSx_4,StackingEnsemble,0.573,0.685,0.806,,Headache
-physSx_5,LR-ElasticNet,0.63,0.68,0.58,0.64,Chest pain
-physSx_6,LR-ElasticNet,0.62,0.68,0.61,0.63,Dizziness
-physSx_9,LR-ElasticNet,0.63,0.68,0.62,0.64,Shortness of breath
-physSx_13,StackingEnsemble,0.588,0.679,0.817,,Trouble sleeping
-physSx_1,LR-ElasticNet,0.61,0.65,0.61,0.62,Stomach pain
-physSx_11,TabNet-Deep,0.62,0.629,0.652,,Nausea/gas/indigestion
-physSx_3,TabNet-Deep,0.604,0.625,0.624,,Limb/joint pain
-physSx_7,LR-ElasticNet,0.6,0.62,0.48,0.66,Fainting spells
-physSx_2,StackingEnsemble,0.579,0.609,0.672,,Back pain
-physSx_10,LR-ElasticNet,0.56,0.57,0.56,0.57,Constipation
+Symptom,Model,Accuracy,Balanced_Accuracy,F1_Score,Precision,Recall,ROC_AUC,Symptom_Name
+physSx_12,StackingEnsemble,,0.535,0.934,,,0.765,Fatigue
+physSx_6,LR-L1,0.65,0.654,0.547,0.463,0.667,0.701,Dizziness
+physSx_4,StackingEnsemble,,0.573,0.806,,,0.685,Headache
+physSx_9,LR-L1,0.633,0.639,0.535,0.452,0.657,0.683,Shortness of breath
+physSx_13,StackingEnsemble,,0.588,0.817,,,0.679,Trouble sleeping
+physSx_7,LR-L1,0.658,0.627,0.195,0.117,0.591,0.661,Fainting spells
+physSx_8,ExtraTrees,,0.622,0.602,,,0.657,Heart pound/race
+physSx_5,LR-L1,0.618,0.601,0.398,0.305,0.572,0.651,Chest pain
+physSx_1,LR-L1,0.597,0.599,0.587,0.556,0.622,0.637,Stomach pain
+physSx_11,TabNet-Deep,,0.62,0.652,,,0.629,Nausea/gas/indigestion
+physSx_3,TabNet-Deep,,0.604,0.624,,,0.625,Limb/joint pain
+physSx_2,StackingEnsemble,,0.579,0.672,,,0.609,Back pain
+physSx_10,LR-L2,0.549,0.545,0.453,0.395,0.532,0.572,Constipation

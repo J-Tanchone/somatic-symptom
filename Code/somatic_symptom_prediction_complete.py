@@ -1042,29 +1042,24 @@ print("\n📥 Importing Logistic Regression results from Google Drive...")
 results_df = pd.DataFrame(all_results)
 results_df = results_df.round(3)
 
+# ============================================================================
+# 5.5 IMPORT PREVIOUS RESULTS FROM GITHUB REPOSITORY
+# ============================================================================
+print("\n📥 Importing previous results from GitHub repository...")
+results_df = pd.DataFrame(all_results)
+results_df = results_df.round(3)
+
 try:
-    from google.colab import drive
+    # Define repository path
+    repo_path = Path("somatic-symptom")
+    results_path = "somatic-symptom/Result/results_GLMnet.csv"
 
-    # Mount if needed
-    if not Path('/content/drive').exists():
-        drive.mount('/content/drive')
+    # Read all_results_noGLMnet.csv
+    previous_df = pd.read_csv(results_path)
 
-    # Read all_results_v1.csv
-    lr_path = '/content/drive/My Drive/somatic-symptom/Result/all_results_v1.csv'
-    lr_df = pd.read_csv(lr_path)
+    print(f"  ✓ Found {len(previous_df)} results from previous analysis")
+    print(f"  Models: {previous_df['Model'].unique().tolist()}")
 
-    # Filter for only LR models (ElasticNet, LASSO, Ridge)
-    lr_models = ['LR-ElasticNet', 'LR-LASSO', 'LR-Ridge']
-    lr_df = lr_df[lr_df['Model'].isin(lr_models)]
-
-    print(f"  Found {len(lr_df)} Logistic Regression results")
-    print(f"  Models: {lr_df['Model'].unique().tolist()}")
-
-    # Rename columns to match results_df (if needed)
-    lr_df = lr_df.rename(columns={
-        'AUC': 'ROC_AUC',
-        'Macro_F1': 'F1_Score'
-    })
 
     # Keep only required columns
     required_cols = ['Symptom', 'Model', 'Accuracy', 'Balanced_Accuracy',

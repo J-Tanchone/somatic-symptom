@@ -5,16 +5,5 @@
   "balanced_accuracy": 0.62,
   "roc_auc": 0.629,
   "f1_score": 0.652,
-  "timestamp": "2025-11-14T10:21:49.077684",
-  "hyperparameters": {
-    "n_estimators": 967,
-    "max_depth": 8,
-    "learning_rate": 0.016397746606843348,
-    "min_child_weight": 7,
-    "subsample": 0.6022146126287726,
-    "colsample_bytree": 0.7468485790271624,
-    "gamma": 2.929441836415374,
-    "reg_alpha": 6.851442255542799,
-    "reg_lambda": 5.518715114393484
-  }
+  "timestamp": "2025-12-03T02:19:03.387684"
 }

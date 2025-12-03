@@ -1,34 +1,34 @@
 Symptom_Code,Symptom_Name,Model,ROC_AUC,F1_Score,Predictor,Mean_Abs_SHAP
-physSx_1,Stomach pain,LR-ElasticNet,0.65,0.61,stress_amplification,0.3065969321564434
-physSx_1,Stomach pain,LR-ElasticNet,0.65,0.61,achievement_stress_interaction,0.31496557969593325
-physSx_1,Stomach pain,LR-ElasticNet,0.65,0.61,Income,0.32709907894164736
-physSx_1,Stomach pain,LR-ElasticNet,0.65,0.61,low_efficacy_high_stress,0.33789799905263174
-physSx_1,Stomach pain,LR-ElasticNet,0.65,0.61,Sex,0.3419425757794689
-physSx_1,Stomach pain,LR-ElasticNet,0.65,0.61,Efficacy/Competence,0.34843112392202
-physSx_1,Stomach pain,LR-ElasticNet,0.65,0.61,achievement_gap,0.44462508582237253
-physSx_1,Stomach pain,LR-ElasticNet,0.65,0.61,Social Media - Maintaining Connections,0.45004804709618995
-physSx_1,Stomach pain,LR-ElasticNet,0.65,0.61,Perceived Stress,0.4600833300851575
-physSx_1,Stomach pain,LR-ElasticNet,0.65,0.61,Identity Exploration (IDEA-8),0.5818843567219854
-physSx_1,Stomach pain,LR-ElasticNet,0.65,0.61,Need to Belong,0.6400601355990112
-physSx_1,Stomach pain,LR-ElasticNet,0.65,0.61,Social Media - Making New Connections,0.6400914991789359
-physSx_1,Stomach pain,LR-ElasticNet,0.65,0.61,Interpersonal Transgressions,0.6611819585992835
-physSx_1,Stomach pain,LR-ElasticNet,0.65,0.61,Mindfulness,0.9471282941391534
-physSx_1,Stomach pain,LR-ElasticNet,0.65,0.61,Subjective Well-Being,1.2145592281542956
-physSx_2,Back pain,LR-ElasticNet,0.64,0.59,Markers of Adulthood - Achievement,0.21199243173238183
-physSx_2,Back pain,LR-ElasticNet,0.64,0.59,catastrophizing_score,0.2383241193258818
-physSx_2,Back pain,LR-ElasticNet,0.64,0.59,Disability Identity & Status,0.24115378656944023
-physSx_2,Back pain,LR-ElasticNet,0.64,0.59,Efficacy/Competence,0.24508033812187274
-physSx_2,Back pain,LR-ElasticNet,0.64,0.59,Markers of Adulthood - Importance,0.2538892598429898
-physSx_2,Back pain,LR-ElasticNet,0.64,0.59,Income,0.3359445950382239
-physSx_2,Back pain,LR-ElasticNet,0.64,0.59,Identity Exploration (IDEA-8),0.34330573132194586
-physSx_2,Back pain,LR-ElasticNet,0.64,0.59,Subjective Well-Being,0.3772044110257352
-physSx_2,Back pain,LR-ElasticNet,0.64,0.59,Perceived Stress,0.41143036681046663
-physSx_2,Back pain,LR-ElasticNet,0.64,0.59,Mindfulness,0.5200503918220256
-physSx_2,Back pain,LR-ElasticNet,0.64,0.59,Need to Belong,0.5455008069829544
-physSx_2,Back pain,LR-ElasticNet,0.64,0.59,stress_support_interaction,0.6354742443479844
-physSx_2,Back pain,LR-ElasticNet,0.64,0.59,Social Media - Maintaining Connections,0.680891269944945
-physSx_2,Back pain,LR-ElasticNet,0.64,0.59,Social Media - Making New Connections,1.1138952400315294
-physSx_2,Back pain,LR-ElasticNet,0.64,0.59,Perceived Social Support,1.639113621581339
+physSx_1,Stomach pain,TabNet-Deep,0.643,0.577,stress_amplification,0.3065969321564434
+physSx_1,Stomach pain,TabNet-Deep,0.643,0.577,achievement_stress_interaction,0.31496557969593325
+physSx_1,Stomach pain,TabNet-Deep,0.643,0.577,Income,0.32709907894164736
+physSx_1,Stomach pain,TabNet-Deep,0.643,0.577,low_efficacy_high_stress,0.33789799905263174
+physSx_1,Stomach pain,TabNet-Deep,0.643,0.577,Sex,0.3419425757794689
+physSx_1,Stomach pain,TabNet-Deep,0.643,0.577,Efficacy/Competence,0.34843112392202
+physSx_1,Stomach pain,TabNet-Deep,0.643,0.577,achievement_gap,0.44462508582237253
+physSx_1,Stomach pain,TabNet-Deep,0.643,0.577,Social Media - Maintaining Connections,0.45004804709618995
+physSx_1,Stomach pain,TabNet-Deep,0.643,0.577,Perceived Stress,0.4600833300851575
+physSx_1,Stomach pain,TabNet-Deep,0.643,0.577,Identity Exploration (IDEA-8),0.5818843567219854
+physSx_1,Stomach pain,TabNet-Deep,0.643,0.577,Need to Belong,0.6400601355990112
+physSx_1,Stomach pain,TabNet-Deep,0.643,0.577,Social Media - Making New Connections,0.6400914991789359
+physSx_1,Stomach pain,TabNet-Deep,0.643,0.577,Interpersonal Transgressions,0.6611819585992835
+physSx_1,Stomach pain,TabNet-Deep,0.643,0.577,Mindfulness,0.9471282941391534
+physSx_1,Stomach pain,TabNet-Deep,0.643,0.577,Subjective Well-Being,1.2145592281542956
+physSx_2,Back pain,CatBoost,0.612,0.646,Need to Belong,0.057894540658955496
+physSx_2,Back pain,CatBoost,0.612,0.646,Social Media - Information Seeking,0.05862533774042303
+physSx_2,Back pain,CatBoost,0.612,0.646,Interpersonal Exploitativeness,0.07108828663227522
+physSx_2,Back pain,CatBoost,0.612,0.646,Social Media - Making New Connections,0.07632960590455963
+physSx_2,Back pain,CatBoost,0.612,0.646,somatization_proneness,0.07877024346347763
+physSx_2,Back pain,CatBoost,0.612,0.646,American Dream,0.08038322309245098
+physSx_2,Back pain,CatBoost,0.612,0.646,Markers of Adulthood - Achievement,0.09060559814757808
+physSx_2,Back pain,CatBoost,0.612,0.646,Mindfulness,0.12606911426301873
+physSx_2,Back pain,CatBoost,0.612,0.646,Perceived Social Support,0.12874876573994345
+physSx_2,Back pain,CatBoost,0.612,0.646,Disability Identity & Status,0.13797145581611764
+physSx_2,Back pain,CatBoost,0.612,0.646,Income,0.14124917119738317
+physSx_2,Back pain,CatBoost,0.612,0.646,Perceived Stress,0.14673828126063182
+physSx_2,Back pain,CatBoost,0.612,0.646,Sex,0.16115364214102978
+physSx_2,Back pain,CatBoost,0.612,0.646,Subjective Well-Being,0.16562962587097294
+physSx_2,Back pain,CatBoost,0.612,0.646,Interpersonal Transgressions,0.1718624889329744
 physSx_3,Limb/joint pain,RandomForest,0.626,0.621,somatization_proneness,0.006719216857067424
 physSx_3,Limb/joint pain,RandomForest,0.626,0.621,Sex,0.006825846830446668
 physSx_3,Limb/joint pain,RandomForest,0.626,0.621,Social Media - Maintaining Connections,0.007183027409585069
@@ -59,21 +59,21 @@ physSx_4,Headache,ExtraTrees,0.687,0.769,stress_support_interaction,0.6742189216
 physSx_4,Headache,ExtraTrees,0.687,0.769,Subjective Well-Being,0.7304218276489405
 physSx_4,Headache,ExtraTrees,0.687,0.769,Social Media - Making New Connections,0.747814381443492
 physSx_4,Headache,ExtraTrees,0.687,0.769,Interpersonal Transgressions,0.8878031837299009
-physSx_5,Chest pain,LR-ElasticNet,0.68,0.58,perfectionism_stress,0.3296669532594693
-physSx_5,Chest pain,LR-ElasticNet,0.68,0.58,achievement_gap_squared,0.3813537527429454
-physSx_5,Chest pain,LR-ElasticNet,0.68,0.58,achievement_gap,0.3993039747489498
-physSx_5,Chest pain,LR-ElasticNet,0.68,0.58,stress_support_interaction,0.4367711477736123
-physSx_5,Chest pain,LR-ElasticNet,0.68,0.58,achievement_stress_interaction,0.44598740795546166
-physSx_5,Chest pain,LR-ElasticNet,0.68,0.58,low_efficacy_high_stress,0.4639358256664281
-physSx_5,Chest pain,LR-ElasticNet,0.68,0.58,Subjective Well-Being,0.5397131443110101
-physSx_5,Chest pain,LR-ElasticNet,0.68,0.58,Disability Identity & Status,0.5521581471675098
-physSx_5,Chest pain,LR-ElasticNet,0.68,0.58,Efficacy/Competence,0.6136543137805266
-physSx_5,Chest pain,LR-ElasticNet,0.68,0.58,Perceived Social Support,0.6608437511456142
-physSx_5,Chest pain,LR-ElasticNet,0.68,0.58,Interpersonal Transgressions,0.8197310157912847
-physSx_5,Chest pain,LR-ElasticNet,0.68,0.58,Mindfulness,0.8687318239203492
-physSx_5,Chest pain,LR-ElasticNet,0.68,0.58,Social Media - Making New Connections,1.1566138393657945
-physSx_5,Chest pain,LR-ElasticNet,0.68,0.58,Need to Belong,1.1575050861300187
-physSx_5,Chest pain,LR-ElasticNet,0.68,0.58,Social Media - Maintaining Connections,1.4300393706297334
+physSx_5,Chest pain,LR-L1,0.651,0.398,perfectionism_stress,0.3296669532594693
+physSx_5,Chest pain,LR-L1,0.651,0.398,achievement_gap_squared,0.3813537527429454
+physSx_5,Chest pain,LR-L1,0.651,0.398,achievement_gap,0.3993039747489498
+physSx_5,Chest pain,LR-L1,0.651,0.398,stress_support_interaction,0.4367711477736123
+physSx_5,Chest pain,LR-L1,0.651,0.398,achievement_stress_interaction,0.44598740795546166
+physSx_5,Chest pain,LR-L1,0.651,0.398,low_efficacy_high_stress,0.4639358256664281
+physSx_5,Chest pain,LR-L1,0.651,0.398,Subjective Well-Being,0.5397131443110101
+physSx_5,Chest pain,LR-L1,0.651,0.398,Disability Identity & Status,0.5521581471675098
+physSx_5,Chest pain,LR-L1,0.651,0.398,Efficacy/Competence,0.6136543137805266
+physSx_5,Chest pain,LR-L1,0.651,0.398,Perceived Social Support,0.6608437511456142
+physSx_5,Chest pain,LR-L1,0.651,0.398,Interpersonal Transgressions,0.8197310157912847
+physSx_5,Chest pain,LR-L1,0.651,0.398,Mindfulness,0.8687318239203492
+physSx_5,Chest pain,LR-L1,0.651,0.398,Social Media - Making New Connections,1.1566138393657945
+physSx_5,Chest pain,LR-L1,0.651,0.398,Need to Belong,1.1575050861300187
+physSx_5,Chest pain,LR-L1,0.651,0.398,Social Media - Maintaining Connections,1.4300393706297334
 physSx_6,Dizziness,ExtraTrees,0.703,0.5,Sex,0.23869485183096373
 physSx_6,Dizziness,ExtraTrees,0.703,0.5,Income,0.2425725523442787
 physSx_6,Dizziness,ExtraTrees,0.703,0.5,efficacy_belong_interaction,0.2535165611593889
@@ -89,36 +89,36 @@ physSx_6,Dizziness,ExtraTrees,0.703,0.5,Social Media - Making New Connections,0.
 physSx_6,Dizziness,ExtraTrees,0.703,0.5,Need to Belong,0.6670221430074281
 physSx_6,Dizziness,ExtraTrees,0.703,0.5,Subjective Well-Being,0.9929293982202292
 physSx_6,Dizziness,ExtraTrees,0.703,0.5,Interpersonal Exploitativeness,1.9683474068663984
-physSx_7,Fainting spells,StackingEnsemble,0.654,0.0,Markers of Adulthood - Importance,0.523433403026689
-physSx_7,Fainting spells,StackingEnsemble,0.654,0.0,stress_support_interaction,0.6205557629350187
-physSx_7,Fainting spells,StackingEnsemble,0.654,0.0,Perceived Stress,0.6379681456500004
-physSx_7,Fainting spells,StackingEnsemble,0.654,0.0,Markers of Adulthood - Achievement,0.7334863737414629
-physSx_7,Fainting spells,StackingEnsemble,0.654,0.0,Disability Identity & Status,0.8264707790114006
-physSx_7,Fainting spells,StackingEnsemble,0.654,0.0,Mindfulness,1.0103394576472864
-physSx_7,Fainting spells,StackingEnsemble,0.654,0.0,Social Media - Maintaining Connections,1.0629054964701756
-physSx_7,Fainting spells,StackingEnsemble,0.654,0.0,Perceived Social Support,1.0760102857322602
-physSx_7,Fainting spells,StackingEnsemble,0.654,0.0,Sex,1.139803056915692
-physSx_7,Fainting spells,StackingEnsemble,0.654,0.0,Efficacy/Competence,1.1594583699594252
-physSx_7,Fainting spells,StackingEnsemble,0.654,0.0,Interpersonal Exploitativeness,1.1685896901339587
-physSx_7,Fainting spells,StackingEnsemble,0.654,0.0,Need to Belong,1.532087669529848
-physSx_7,Fainting spells,StackingEnsemble,0.654,0.0,Social Media - Making New Connections,1.8152015078871617
-physSx_7,Fainting spells,StackingEnsemble,0.654,0.0,Subjective Well-Being,1.8343690897612237
-physSx_7,Fainting spells,StackingEnsemble,0.654,0.0,Interpersonal Transgressions,2.541301815750992
-physSx_8,Heart pound/race,LR-ElasticNet,0.7,0.63,efficacy_belong_interaction,0.18741648548142328
-physSx_8,Heart pound/race,LR-ElasticNet,0.7,0.63,Markers of Adulthood - Achievement,0.20403012228505757
-physSx_8,Heart pound/race,LR-ElasticNet,0.7,0.63,Subjective Well-Being,0.21448567848632932
-physSx_8,Heart pound/race,LR-ElasticNet,0.7,0.63,Disability Identity & Status,0.21725947197893364
-physSx_8,Heart pound/race,LR-ElasticNet,0.7,0.63,Sex,0.2374241083479811
-physSx_8,Heart pound/race,LR-ElasticNet,0.7,0.63,Markers of Adulthood - Importance,0.25394325150850067
-physSx_8,Heart pound/race,LR-ElasticNet,0.7,0.63,achievement_gap,0.26724460197785815
-physSx_8,Heart pound/race,LR-ElasticNet,0.7,0.63,Social Media - Making New Connections,0.28440245158092325
-physSx_8,Heart pound/race,LR-ElasticNet,0.7,0.63,Perceived Social Support,0.3342986777383547
-physSx_8,Heart pound/race,LR-ElasticNet,0.7,0.63,Interpersonal Transgressions,0.38276608326085004
-physSx_8,Heart pound/race,LR-ElasticNet,0.7,0.63,achievement_stress_interaction,0.4343368566799198
-physSx_8,Heart pound/race,LR-ElasticNet,0.7,0.63,Identity Exploration (IDEA-8),0.46793915104230904
-physSx_8,Heart pound/race,LR-ElasticNet,0.7,0.63,Perceived Stress,0.6995250423908751
-physSx_8,Heart pound/race,LR-ElasticNet,0.7,0.63,Need to Belong,0.7242934458666203
-physSx_8,Heart pound/race,LR-ElasticNet,0.7,0.63,Mindfulness,1.0082508145956857
+physSx_7,Fainting spells,LR-L1,0.661,0.195,Markers of Adulthood - Importance,0.523433403026689
+physSx_7,Fainting spells,LR-L1,0.661,0.195,stress_support_interaction,0.6205557629350187
+physSx_7,Fainting spells,LR-L1,0.661,0.195,Perceived Stress,0.6379681456500004
+physSx_7,Fainting spells,LR-L1,0.661,0.195,Markers of Adulthood - Achievement,0.7334863737414629
+physSx_7,Fainting spells,LR-L1,0.661,0.195,Disability Identity & Status,0.8264707790114006
+physSx_7,Fainting spells,LR-L1,0.661,0.195,Mindfulness,1.0103394576472864
+physSx_7,Fainting spells,LR-L1,0.661,0.195,Social Media - Maintaining Connections,1.0629054964701756
+physSx_7,Fainting spells,LR-L1,0.661,0.195,Perceived Social Support,1.0760102857322602
+physSx_7,Fainting spells,LR-L1,0.661,0.195,Sex,1.139803056915692
+physSx_7,Fainting spells,LR-L1,0.661,0.195,Efficacy/Competence,1.1594583699594252
+physSx_7,Fainting spells,LR-L1,0.661,0.195,Interpersonal Exploitativeness,1.1685896901339587
+physSx_7,Fainting spells,LR-L1,0.661,0.195,Need to Belong,1.532087669529848
+physSx_7,Fainting spells,LR-L1,0.661,0.195,Social Media - Making New Connections,1.8152015078871617
+physSx_7,Fainting spells,LR-L1,0.661,0.195,Subjective Well-Being,1.8343690897612237
+physSx_7,Fainting spells,LR-L1,0.661,0.195,Interpersonal Transgressions,2.541301815750992
+physSx_8,Heart pound/race,ExtraTrees,0.657,0.602,efficacy_belong_interaction,0.18741648548142328
+physSx_8,Heart pound/race,ExtraTrees,0.657,0.602,Markers of Adulthood - Achievement,0.20403012228505757
+physSx_8,Heart pound/race,ExtraTrees,0.657,0.602,Subjective Well-Being,0.21448567848632932
+physSx_8,Heart pound/race,ExtraTrees,0.657,0.602,Disability Identity & Status,0.21725947197893364
+physSx_8,Heart pound/race,ExtraTrees,0.657,0.602,Sex,0.2374241083479811
+physSx_8,Heart pound/race,ExtraTrees,0.657,0.602,Markers of Adulthood - Importance,0.25394325150850067
+physSx_8,Heart pound/race,ExtraTrees,0.657,0.602,achievement_gap,0.26724460197785815
+physSx_8,Heart pound/race,ExtraTrees,0.657,0.602,Social Media - Making New Connections,0.28440245158092325
+physSx_8,Heart pound/race,ExtraTrees,0.657,0.602,Perceived Social Support,0.3342986777383547
+physSx_8,Heart pound/race,ExtraTrees,0.657,0.602,Interpersonal Transgressions,0.38276608326085004
+physSx_8,Heart pound/race,ExtraTrees,0.657,0.602,achievement_stress_interaction,0.4343368566799198
+physSx_8,Heart pound/race,ExtraTrees,0.657,0.602,Identity Exploration (IDEA-8),0.46793915104230904
+physSx_8,Heart pound/race,ExtraTrees,0.657,0.602,Perceived Stress,0.6995250423908751
+physSx_8,Heart pound/race,ExtraTrees,0.657,0.602,Need to Belong,0.7242934458666203
+physSx_8,Heart pound/race,ExtraTrees,0.657,0.602,Mindfulness,1.0082508145956857
 physSx_9,Shortness of breath,ExtraTrees,0.689,0.479,Perceived Stress,0.18078074865101618
 physSx_9,Shortness of breath,ExtraTrees,0.689,0.479,Education,0.20026313900548495
 physSx_9,Shortness of breath,ExtraTrees,0.689,0.479,Markers of Adulthood - Importance,0.2126116880679321
@@ -149,21 +149,21 @@ physSx_10,Constipation,ExtraTrees,0.613,0.43,Efficacy/Competence,0.5805710090505
 physSx_10,Constipation,ExtraTrees,0.613,0.43,Perceived Stress,0.7642718520057561
 physSx_10,Constipation,ExtraTrees,0.613,0.43,Need to Belong,0.9221304794127341
 physSx_10,Constipation,ExtraTrees,0.613,0.43,Subjective Well-Being,0.9279615608843698
-physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,0.647,0.583,Income,0.09418008848826823
-physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,0.647,0.583,Social Media - Information Seeking,0.09595459329622125
-physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,0.647,0.583,Interpersonal Exploitativeness,0.10770458998131298
-physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,0.647,0.583,Social Media - Maintaining Connections,0.1077843719502188
-physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,0.647,0.583,Markers of Adulthood - Importance,0.10873459243988269
-physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,0.647,0.583,American Dream,0.11463814234087667
-physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,0.647,0.583,Perceived Stress,0.12709149779992646
-physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,0.647,0.583,Perceived Social Support,0.1273411512520907
-physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,0.647,0.583,Subjective Well-Being,0.13278360129971536
-physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,0.647,0.583,Identity Exploration (IDEA-8),0.13531940030313305
-physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,0.647,0.583,Need to Belong,0.146871385403797
-physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,0.647,0.583,Mindfulness,0.15058267749251303
-physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,0.647,0.583,stress_amplification,0.1506112788052687
-physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,0.647,0.583,Disability Identity & Status,0.15866863599702832
-physSx_11,Nausea/gas/indigestion,XGBoost-Optimized,0.647,0.583,Sex,0.16200065203328112
+physSx_11,Nausea/gas/indigestion,LR-L1,0.649,0.597,Income,0.21293244912944023
+physSx_11,Nausea/gas/indigestion,LR-L1,0.649,0.597,efficacy_belong_interaction,0.23461273056741921
+physSx_11,Nausea/gas/indigestion,LR-L1,0.649,0.597,achievement_gap,0.2605976297435577
+physSx_11,Nausea/gas/indigestion,LR-L1,0.649,0.597,Mindfulness,0.29765717683027576
+physSx_11,Nausea/gas/indigestion,LR-L1,0.649,0.597,Perceived Social Support,0.32137258214589914
+physSx_11,Nausea/gas/indigestion,LR-L1,0.649,0.597,stress_support_interaction,0.3256495223458576
+physSx_11,Nausea/gas/indigestion,LR-L1,0.649,0.597,Subjective Well-Being,0.3815244097653528
+physSx_11,Nausea/gas/indigestion,LR-L1,0.649,0.597,Efficacy/Competence,0.3844886218981756
+physSx_11,Nausea/gas/indigestion,LR-L1,0.649,0.597,Identity Exploration (IDEA-8),0.5270853461440373
+physSx_11,Nausea/gas/indigestion,LR-L1,0.649,0.597,Social Media - Maintaining Connections,0.6061687018990339
+physSx_11,Nausea/gas/indigestion,LR-L1,0.649,0.597,Perceived Stress,0.6079658100454063
+physSx_11,Nausea/gas/indigestion,LR-L1,0.649,0.597,Disability Identity & Status,0.6089717480247192
+physSx_11,Nausea/gas/indigestion,LR-L1,0.649,0.597,Social Media - Making New Connections,0.9187243127230995
+physSx_11,Nausea/gas/indigestion,LR-L1,0.649,0.597,Interpersonal Exploitativeness,0.9477548889055081
+physSx_11,Nausea/gas/indigestion,LR-L1,0.649,0.597,Need to Belong,1.4014925927882014
 physSx_12,Fatigue,RandomForest,0.781,0.93,Identity Exploration (IDEA-8),0.0050464094035208695
 physSx_12,Fatigue,RandomForest,0.781,0.93,stress_amplification,0.005597911675365567
 physSx_12,Fatigue,RandomForest,0.781,0.93,American Dream,0.005743402421856662
@@ -179,18 +179,18 @@ physSx_12,Fatigue,RandomForest,0.781,0.93,Need to Belong,0.01802860001531892
 physSx_12,Fatigue,RandomForest,0.781,0.93,Subjective Well-Being,0.02485194401903247
 physSx_12,Fatigue,RandomForest,0.781,0.93,Mindfulness,0.02621975564014293
 physSx_12,Fatigue,RandomForest,0.781,0.93,Sex,0.03356564572993455
-physSx_13,Trouble sleeping,LR-ElasticNet,0.7,0.62,Markers of Adulthood - Importance,0.1837473843084237
-physSx_13,Trouble sleeping,LR-ElasticNet,0.7,0.62,Identity Exploration (IDEA-8),0.18489356548408153
-physSx_13,Trouble sleeping,LR-ElasticNet,0.7,0.62,Perceived Stress,0.18508223250498237
-physSx_13,Trouble sleeping,LR-ElasticNet,0.7,0.62,Interpersonal Transgressions,0.18868725445199655
-physSx_13,Trouble sleeping,LR-ElasticNet,0.7,0.62,Sex,0.23541881096674752
-physSx_13,Trouble sleeping,LR-ElasticNet,0.7,0.62,stress_support_interaction,0.2577518736839886
-physSx_13,Trouble sleeping,LR-ElasticNet,0.7,0.62,Social Media - Making New Connections,0.2734201067885489
-physSx_13,Trouble sleeping,LR-ElasticNet,0.7,0.62,Income,0.27746529966760963
-physSx_13,Trouble sleeping,LR-ElasticNet,0.7,0.62,Social Media - Maintaining Connections,0.39303092806670215
-physSx_13,Trouble sleeping,LR-ElasticNet,0.7,0.62,Interpersonal Exploitativeness,0.5228162384906694
-physSx_13,Trouble sleeping,LR-ElasticNet,0.7,0.62,Subjective Well-Being,0.6513037827387067
-physSx_13,Trouble sleeping,LR-ElasticNet,0.7,0.62,Disability Identity & Status,0.7119086826690731
-physSx_13,Trouble sleeping,LR-ElasticNet,0.7,0.62,Perceived Social Support,0.7257185718260903
-physSx_13,Trouble sleeping,LR-ElasticNet,0.7,0.62,Need to Belong,0.7670493059893282
-physSx_13,Trouble sleeping,LR-ElasticNet,0.7,0.62,Efficacy/Competence,1.0747343090661474
+physSx_13,Trouble sleeping,LR-L1,0.694,0.698,Markers of Adulthood - Importance,0.1837473843084237
+physSx_13,Trouble sleeping,LR-L1,0.694,0.698,Identity Exploration (IDEA-8),0.18489356548408153
+physSx_13,Trouble sleeping,LR-L1,0.694,0.698,Perceived Stress,0.18508223250498237
+physSx_13,Trouble sleeping,LR-L1,0.694,0.698,Interpersonal Transgressions,0.18868725445199655
+physSx_13,Trouble sleeping,LR-L1,0.694,0.698,Sex,0.23541881096674752
+physSx_13,Trouble sleeping,LR-L1,0.694,0.698,stress_support_interaction,0.2577518736839886
+physSx_13,Trouble sleeping,LR-L1,0.694,0.698,Social Media - Making New Connections,0.2734201067885489
+physSx_13,Trouble sleeping,LR-L1,0.694,0.698,Income,0.27746529966760963
+physSx_13,Trouble sleeping,LR-L1,0.694,0.698,Social Media - Maintaining Connections,0.39303092806670215
+physSx_13,Trouble sleeping,LR-L1,0.694,0.698,Interpersonal Exploitativeness,0.5228162384906694
+physSx_13,Trouble sleeping,LR-L1,0.694,0.698,Subjective Well-Being,0.6513037827387067
+physSx_13,Trouble sleeping,LR-L1,0.694,0.698,Disability Identity & Status,0.7119086826690731
+physSx_13,Trouble sleeping,LR-L1,0.694,0.698,Perceived Social Support,0.7257185718260903
+physSx_13,Trouble sleeping,LR-L1,0.694,0.698,Need to Belong,0.7670493059893282
+physSx_13,Trouble sleeping,LR-L1,0.694,0.698,Efficacy/Competence,1.0747343090661474

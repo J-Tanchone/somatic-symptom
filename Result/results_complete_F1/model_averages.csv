@@ -1,9 +1,9 @@
 Model,Balanced_Accuracy,ROC_AUC,F1_Score
-LR-ElasticNet,0.609,0.655,0.582
-LR-Ridge,0.608,0.655,0.582
-LR-LASSO,0.609,0.655,0.582
 TabNet-Deep,0.602,0.631,0.564
+LR-L1,0.613,0.66,0.563
 ExtraTrees,0.597,0.66,0.559
+LR-ElasticNet,0.61,0.657,0.558
+LR-L2,0.602,0.652,0.552
 RandomForest,0.578,0.654,0.533
 XGBoost-Optimized,0.584,0.643,0.529
 VotingEnsemble,0.573,0.644,0.525

@@ -1,102 +1,12 @@
 [
   {
-    "symptom_code": "physSx_12",
-    "symptom_name": "Fatigue",
-    "best_model": "StackingEnsemble",
-    "balanced_accuracy": 0.535,
-    "roc_auc": 0.765,
-    "f1_score": 0.934,
-    "timestamp": "2025-11-14T10:21:48.841095"
-  },
-  {
-    "symptom_code": "physSx_8",
-    "symptom_name": "Heart pound/race",
-    "best_model": "LR-ElasticNet",
-    "balanced_accuracy": 0.63,
-    "roc_auc": 0.7,
-    "f1_score": 0.63,
-    "timestamp": "2025-11-14T10:21:48.861647"
-  },
-  {
-    "symptom_code": "physSx_4",
-    "symptom_name": "Headache",
-    "best_model": "StackingEnsemble",
-    "balanced_accuracy": 0.573,
-    "roc_auc": 0.685,
-    "f1_score": 0.806,
-    "timestamp": "2025-11-14T10:21:48.880123"
-  },
-  {
-    "symptom_code": "physSx_5",
-    "symptom_name": "Chest pain",
-    "best_model": "LR-ElasticNet",
-    "balanced_accuracy": 0.63,
-    "roc_auc": 0.68,
-    "f1_score": 0.58,
-    "timestamp": "2025-11-14T10:21:48.903388"
-  },
-  {
-    "symptom_code": "physSx_6",
-    "symptom_name": "Dizziness",
-    "best_model": "LR-ElasticNet",
-    "balanced_accuracy": 0.62,
-    "roc_auc": 0.68,
-    "f1_score": 0.61,
-    "timestamp": "2025-11-14T10:21:48.928925"
-  },
-  {
-    "symptom_code": "physSx_9",
-    "symptom_name": "Shortness of breath",
-    "best_model": "LR-ElasticNet",
-    "balanced_accuracy": 0.63,
-    "roc_auc": 0.68,
-    "f1_score": 0.62,
-    "timestamp": "2025-11-14T10:21:48.989852"
-  },
-  {
-    "symptom_code": "physSx_13",
-    "symptom_name": "Trouble sleeping",
-    "best_model": "StackingEnsemble",
-    "balanced_accuracy": 0.588,
-    "roc_auc": 0.679,
-    "f1_score": 0.817,
-    "timestamp": "2025-11-14T10:21:49.034396"
-  },
-  {
     "symptom_code": "physSx_1",
     "symptom_name": "Stomach pain",
-    "best_model": "LR-ElasticNet",
-    "balanced_accuracy": 0.61,
-    "roc_auc": 0.65,
-    "f1_score": 0.61,
-    "timestamp": "2025-11-14T10:21:49.059502"
-  },
-  {
-    "symptom_code": "physSx_11",
-    "symptom_name": "Nausea/gas/indigestion",
-    "best_model": "TabNet-Deep",
-    "balanced_accuracy": 0.62,
-    "roc_auc": 0.629,
-    "f1_score": 0.652,
-    "timestamp": "2025-11-14T10:21:49.077684"
-  },
-  {
-    "symptom_code": "physSx_3",
-    "symptom_name": "Limb/joint pain",
-    "best_model": "TabNet-Deep",
-    "balanced_accuracy": 0.604,
-    "roc_auc": 0.625,
-    "f1_score": 0.624,
-    "timestamp": "2025-11-14T10:21:49.104111"
-  },
-  {
-    "symptom_code": "physSx_7",
-    "symptom_name": "Fainting spells",
-    "best_model": "LR-ElasticNet",
-    "balanced_accuracy": 0.6,
-    "roc_auc": 0.62,
-    "f1_score": 0.48,
-    "timestamp": "2025-11-14T10:21:49.118602"
+    "best_model": "LR-L1",
+    "balanced_accuracy": 0.599,
+    "roc_auc": 0.637,
+    "f1_score": 0.587,
+    "timestamp": "2025-12-03T02:19:03.268178"
   },
   {
     "symptom_code": "physSx_2",
@@ -105,15 +15,105 @@
     "balanced_accuracy": 0.579,
     "roc_auc": 0.609,
     "f1_score": 0.672,
-    "timestamp": "2025-11-14T10:21:49.137935"
+    "timestamp": "2025-12-03T02:19:03.285918"
+  },
+  {
+    "symptom_code": "physSx_3",
+    "symptom_name": "Limb/joint pain",
+    "best_model": "TabNet-Deep",
+    "balanced_accuracy": 0.604,
+    "roc_auc": 0.625,
+    "f1_score": 0.624,
+    "timestamp": "2025-12-03T02:19:03.292693"
+  },
+  {
+    "symptom_code": "physSx_4",
+    "symptom_name": "Headache",
+    "best_model": "StackingEnsemble",
+    "balanced_accuracy": 0.573,
+    "roc_auc": 0.685,
+    "f1_score": 0.806,
+    "timestamp": "2025-12-03T02:19:03.299357"
+  },
+  {
+    "symptom_code": "physSx_5",
+    "symptom_name": "Chest pain",
+    "best_model": "LR-L1",
+    "balanced_accuracy": 0.601,
+    "roc_auc": 0.651,
+    "f1_score": 0.398,
+    "timestamp": "2025-12-03T02:19:03.310148"
+  },
+  {
+    "symptom_code": "physSx_6",
+    "symptom_name": "Dizziness",
+    "best_model": "LR-L1",
+    "balanced_accuracy": 0.654,
+    "roc_auc": 0.701,
+    "f1_score": 0.547,
+    "timestamp": "2025-12-03T02:19:03.338041"
+  },
+  {
+    "symptom_code": "physSx_7",
+    "symptom_name": "Fainting spells",
+    "best_model": "LR-L1",
+    "balanced_accuracy": 0.627,
+    "roc_auc": 0.661,
+    "f1_score": 0.195,
+    "timestamp": "2025-12-03T02:19:03.350670"
+  },
+  {
+    "symptom_code": "physSx_8",
+    "symptom_name": "Heart pound/race",
+    "best_model": "ExtraTrees",
+    "balanced_accuracy": 0.622,
+    "roc_auc": 0.657,
+    "f1_score": 0.602,
+    "timestamp": "2025-12-03T02:19:03.361789"
+  },
+  {
+    "symptom_code": "physSx_9",
+    "symptom_name": "Shortness of breath",
+    "best_model": "LR-L1",
+    "balanced_accuracy": 0.639,
+    "roc_auc": 0.683,
+    "f1_score": 0.535,
+    "timestamp": "2025-12-03T02:19:03.363915"
   },
   {
     "symptom_code": "physSx_10",
     "symptom_name": "Constipation",
-    "best_model": "LR-ElasticNet",
-    "balanced_accuracy": 0.56,
-    "roc_auc": 0.57,
-    "f1_score": 0.56,
-    "timestamp": "2025-11-14T10:21:49.149050"
+    "best_model": "LR-L2",
+    "balanced_accuracy": 0.545,
+    "roc_auc": 0.572,
+    "f1_score": 0.453,
+    "timestamp": "2025-12-03T02:19:03.375594"
+  },
+  {
+    "symptom_code": "physSx_11",
+    "symptom_name": "Nausea/gas/indigestion",
+    "best_model": "TabNet-Deep",
+    "balanced_accuracy": 0.62,
+    "roc_auc": 0.629,
+    "f1_score": 0.652,
+    "timestamp": "2025-12-03T02:19:03.387684"
+  },
+  {
+    "symptom_code": "physSx_12",
+    "symptom_name": "Fatigue",
+    "best_model": "StackingEnsemble",
+    "balanced_accuracy": 0.535,
+    "roc_auc": 0.765,
+    "f1_score": 0.934,
+    "timestamp": "2025-12-03T02:19:03.389867"
+  },
+  {
+    "symptom_code": "physSx_13",
+    "symptom_name": "Trouble sleeping",
+    "best_model": "StackingEnsemble",
+    "balanced_accuracy": 0.588,
+    "roc_auc": 0.679,
+    "f1_score": 0.817,
+    "timestamp": "2025-12-03T02:19:03.391966"
   }
 ]

@@ -1,20 +1,9 @@
 {
   "symptom_code": "physSx_8",
   "symptom_name": "Heart pound/race",
-  "best_model": "LR-ElasticNet",
-  "balanced_accuracy": 0.63,
-  "roc_auc": 0.7,
-  "f1_score": 0.63,
-  "timestamp": "2025-11-14T10:08:05.923070",
-  "hyperparameters": {
-    "n_estimators": 551,
-    "max_depth": 8,
-    "learning_rate": 0.05848199104239229,
-    "min_child_weight": 2,
-    "subsample": 0.6883639107345911,
-    "colsample_bytree": 0.9688509134551289,
-    "gamma": 2.0958296256324793,
-    "reg_alpha": 8.767716235188809,
-    "reg_lambda": 1.9590569761399723
-  }
+  "best_model": "ExtraTrees",
+  "balanced_accuracy": 0.622,
+  "roc_auc": 0.657,
+  "f1_score": 0.602,
+  "timestamp": "2025-12-03T02:44:08.370216"
 }

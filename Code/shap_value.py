@@ -55,6 +55,8 @@ print(f"   Sampling Strategy: NONE (natural distribution)")
 print(f"   GPU Acceleration: {USE_GPU}")
 print("="*80)
 
+! pip install catboost
+
 # ============================================================================
 # IMPORTS
 # ============================================================================
@@ -376,19 +378,22 @@ for physSx_var in physSx_cols:
     print(f"  ✓ {physSx_var}: {len(X_train)} train, {len(X_test)} test | {pos_pct:.1f}% positive")
 
 try:
-    from google.colab import drive
+    # Define repository path
+    repo_path = Path("somatic-symptom")
+    results_path = "somatic-symptom/Result/all_results.csv"
 
-    # Mount if needed
-    if not Path('/content/drive').exists():
-        drive.mount('/content/drive')
+    # Read all_results_noGLMnet.csv
+    model = pd.read_csv(results_path)
 
-    # Read all_results_v1.csv
-    path = '/content/drive/My Drive/somatic-symptom/Result/results_complete_ROC_AUC/all_results.csv'
-    model = pd.read_csv(path)
+    print(f"  ✓ Found {len(previous_df)} results from previous analysis")
+    print(f"  Models: {previous_df['Model'].unique().tolist()}")
 except FileNotFoundError:
-    print(f"⚠️  File not found: {path}")
+    print(f"⚠️  File not found: {results_path}")
+    print(f"     Make sure the repository is cloned and the file exists")
 except Exception as e:
-    print(f"⚠️  Could not import Logistic Regression results: {e}")
+    print(f"⚠️  Could not import previous results: {e}")
+    import traceback
+    traceback.print_exc()
 
 # ============================================================================
 # 4. ADVANCED PREPROCESSING PIPELINES
