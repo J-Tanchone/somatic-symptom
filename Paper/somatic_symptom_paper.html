@@ -22,40 +22,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -157,9 +123,8 @@ div.csl-indent {
   <li><a href="#feature-importance" id="toc-feature-importance" class="nav-link" data-scroll-target="#feature-importance"><span class="header-section-number">5.2</span> Feature Importance</a>
   <ul class="collapse">
   <li><a href="#fatigue" id="toc-fatigue" class="nav-link" data-scroll-target="#fatigue"><span class="header-section-number">5.2.1</span> Fatigue</a></li>
-  <li><a href="#trouble-sleeping" id="toc-trouble-sleeping" class="nav-link" data-scroll-target="#trouble-sleeping"><span class="header-section-number">5.2.2</span> Trouble Sleeping</a></li>
-  <li><a href="#headache" id="toc-headache" class="nav-link" data-scroll-target="#headache"><span class="header-section-number">5.2.3</span> Headache</a></li>
-  <li><a href="#symptoms-with-insufficient-predictive-performance" id="toc-symptoms-with-insufficient-predictive-performance" class="nav-link" data-scroll-target="#symptoms-with-insufficient-predictive-performance"><span class="header-section-number">5.2.4</span> Symptoms With Insufficient Predictive Performance</a></li>
+  <li><a href="#dizziness" id="toc-dizziness" class="nav-link" data-scroll-target="#dizziness"><span class="header-section-number">5.2.2</span> Dizziness</a></li>
+  <li><a href="#symptoms-with-insufficient-predictive-performance" id="toc-symptoms-with-insufficient-predictive-performance" class="nav-link" data-scroll-target="#symptoms-with-insufficient-predictive-performance"><span class="header-section-number">5.2.3</span> Symptoms With Insufficient Predictive Performance</a></li>
   </ul></li>
   </ul></li>
   <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">6</span> Discussion</a></li>
@@ -173,7 +138,7 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Pain, Disability, and Depression in Chronic Pain Patients: Investigating Direct and Interactive Effects on Depressive Symptom Severity</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li></ul></div></div>
+<h1 class="title">Pain, Disability, and Depression in Chronic Pain Patients: Investigating Direct and Interactive Effects on Depressive Symptom Severity</h1>
 </div>
 
 
@@ -335,21 +300,6 @@ div.csl-indent {
 <section id="sample" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="sample"><span class="header-section-number">3.3</span> Sample</h2>
 <div id="cell-6" class="cell" data-outputid="2885cda7-d41e-4240-9002-c790a8ea7a6b" data-execution_count="2">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Core packages</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.image <span class="im">as</span> mpimg</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="cf">try</span>:</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> pingouin <span class="im">as</span> pg</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="cf">except</span> <span class="pp">ImportError</span>:</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="op">!</span>pip install pingouin</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="im">import</span> pingouin <span class="im">as</span> pg</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Collecting pingouin
   Downloading pingouin-0.5.5-py3-none-any.whl.metadata (19 kB)
@@ -386,10 +336,6 @@ Successfully installed pandas-flavor-0.8.1 pingouin-0.5.5</code></pre>
 </div>
 </div>
 <div id="cell-7" class="cell" data-outputid="94dbc473-ecec-468a-b416-96abd566bdf0" data-execution_count="3">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>git clone https:<span class="op">//</span>J<span class="op">-</span>Tanchone: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<span class="op">@</span>github.com<span class="op">/</span>J<span class="op">-</span>Tanchone<span class="op">/</span>somatic<span class="op">-</span>symptom.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Cloning into 'somatic-symptom'...
 remote: Enumerating objects: 366, done.
@@ -400,91 +346,9 @@ Receiving objects: 100% (366/366), 47.53 MiB | 14.69 MiB/s, done.
 Resolving deltas: 100% (124/124), done.</code></pre>
 </div>
 </div>
-<div id="cell-8" class="cell" data-execution_count="4">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.read_excel(<span class="st">"somatic-symptom/EAMMi2-Data1/EAMMi2-Data1.2.xlsx"</span>, sheet_name<span class="op">=</span><span class="st">"EAMMi2_Data"</span>)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>codebook <span class="op">=</span> pd.read_excel(<span class="st">"somatic-symptom/EAMMi2-Data1/EAMMi2-Data1.2-Codebook.xlsx"</span>).set_index(<span class="st">'Variable Name'</span>)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Recode sibling variable</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'sibling_c'</span>] <span class="op">=</span> data[<span class="st">'sibling'</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> x: <span class="op">-</span><span class="fl">0.5</span> <span class="cf">if</span> x <span class="op">==</span> <span class="dv">1</span> <span class="cf">else</span> <span class="fl">0.5</span>)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Rename and process marriage variables</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> data.rename(columns<span class="op">=</span>{<span class="st">'marriage2'</span>: <span class="st">'marriage_importance'</span>, <span class="st">'marriage5'</span>: <span class="st">'parental_marriage'</span>})</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> pd.concat([data, pd.get_dummies(data[<span class="st">'parental_marriage'</span>].astype(<span class="st">'category'</span>),</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>                                      prefix<span class="op">=</span><span class="st">'parental_marriage'</span>, drop_first<span class="op">=</span><span class="va">True</span>)], axis<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Compute scale means</span></span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>scales <span class="op">=</span> {</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'idea_m'</span>: [<span class="ss">f'IDEA_</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">9</span>)],</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">'moa_achievement_m'</span>: [<span class="ss">f'moa1#2_</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">11</span>)] <span class="op">+</span> [<span class="ss">f'moa2#1_</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">11</span>)],</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">'moa_importance_m'</span>: [<span class="ss">f'moa2#1_</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">11</span>)] <span class="op">+</span> [<span class="ss">f'moa2#2_</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">11</span>)],</span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">'stress_m'</span>: [<span class="ss">f'stress_</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">11</span>)],</span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">'support_m'</span>: [<span class="ss">f'support_</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">13</span>)],</span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">'belong_m'</span>: [<span class="ss">f'belong_</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">11</span>)],</span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">'mindful_m'</span>: [<span class="ss">f'mindful_</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">16</span>)],</span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">'efficacy_m'</span>: [<span class="ss">f'efficacy_</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">11</span>)],</span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>    <span class="st">'npi_m'</span>: [<span class="ss">f'NPI</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">14</span>)],</span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>    <span class="st">'exploit_m'</span>: [<span class="ss">f'exploit_</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">4</span>)],</span>
-<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>    <span class="st">'disability_m'</span>: [<span class="ss">f'Q10_</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">16</span>)] <span class="op">+</span> [<span class="st">'Q11'</span>] <span class="op">+</span> [<span class="ss">f'Q14_</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>)],</span>
-<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>    <span class="st">'social_conn_m'</span>: [<span class="ss">f'SocMedia_</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">6</span>)],</span>
-<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>    <span class="st">'social_new_m'</span>: [<span class="ss">f'SocMedia_</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">6</span>, <span class="dv">10</span>)],</span>
-<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>    <span class="st">'social_info_m'</span>: [<span class="ss">f'SocMedia_</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">10</span>, <span class="dv">12</span>)],</span>
-<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>    <span class="st">'swb_m'</span>: [<span class="ss">f'swb_</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">7</span>)],</span>
-<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>    <span class="st">'transgres_m'</span>: [<span class="ss">f'transgres_</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">'</span> <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">5</span>)],</span>
-<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>    <span class="st">'usdream_m'</span>: [<span class="st">'usdream_1'</span>, <span class="st">'usdream_2'</span>]</span>
-<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> name, items <span class="kw">in</span> scales.items():</span>
-<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a>    valid_items <span class="op">=</span> [item <span class="cf">for</span> item <span class="kw">in</span> items <span class="cf">if</span> item <span class="kw">in</span> data.columns]</span>
-<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>    data[name] <span class="op">=</span> data[valid_items].mean(axis<span class="op">=</span><span class="dv">1</span>, skipna<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Select final columns</span></span>
-<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>final_data <span class="op">=</span> data[[col <span class="cf">for</span> col <span class="kw">in</span> data.columns <span class="cf">if</span></span>
-<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>                  col.endswith((<span class="st">'_m'</span>, <span class="st">'_c'</span>)) <span class="kw">or</span></span>
-<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>                  col <span class="kw">in</span> [<span class="st">'marriage_importance'</span>, <span class="st">'parental_marriage'</span>] <span class="kw">or</span></span>
-<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>                  col.startswith((<span class="st">'parental_marriage_'</span>, <span class="st">'sex_'</span>))]]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
 <p>As shown in <a href="#tbl-sex" class="quarto-xref">Table&nbsp;1</a>, 73.4% of participants are female, and the <a href="#tbl-race" class="quarto-xref">Table&nbsp;2</a> shows that 63.7% of the participants are white.</p>
 <div class="cell" data-outputid="46bc88aa-acb2-4917-db8d-a30f7a07d1da" data-tbl-num="true" data-execution_count="5">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># First, recode race: keep 1-5 as is, everything else becomes 6 (Other)</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>data[<span class="st">'race/ethnicity'</span>] <span class="op">=</span> data[<span class="st">'race'</span>].<span class="bu">apply</span>(<span class="kw">lambda</span> x: x <span class="cf">if</span> x <span class="kw">in</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>] <span class="cf">else</span> <span class="dv">6</span>)</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Create value counts</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>sex_counts <span class="op">=</span> data[<span class="st">'sex'</span>].value_counts().rename(<span class="st">'Count'</span>)</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>sex_percentages <span class="op">=</span> (data[<span class="st">'sex'</span>].value_counts(normalize<span class="op">=</span><span class="va">True</span>) <span class="op">*</span> <span class="dv">100</span>).rename(<span class="st">'Percentage (%)'</span>)</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>sex_stats <span class="op">=</span> pd.concat([sex_counts, sex_percentages], axis<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>race_counts <span class="op">=</span> data[<span class="st">'race/ethnicity'</span>].value_counts().rename(<span class="st">'Count'</span>)</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>race_percentages <span class="op">=</span> (data[<span class="st">'race/ethnicity'</span>].value_counts(normalize<span class="op">=</span><span class="va">True</span>) <span class="op">*</span> <span class="dv">100</span>).rename(<span class="st">'Percentage (%)'</span>)</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>race_stats <span class="op">=</span> pd.concat([race_counts, race_percentages], axis<span class="op">=</span><span class="dv">1</span>)</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Define mappings</span></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>sex_mapping <span class="op">=</span> {</span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="dv">1</span>: <span class="st">'Male'</span>,</span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    <span class="dv">2</span>: <span class="st">'Female'</span>,</span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>    <span class="dv">3</span>: <span class="st">'Other'</span></span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>race_mapping <span class="op">=</span> {</span>
-<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>    <span class="dv">1</span>: <span class="st">'White'</span>,</span>
-<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>    <span class="dv">2</span>: <span class="st">'Black'</span>,</span>
-<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>    <span class="dv">3</span>: <span class="st">'Hispanic'</span>,</span>
-<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>    <span class="dv">4</span>: <span class="st">'Asian'</span>,</span>
-<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>    <span class="dv">5</span>: <span class="st">'Native American'</span>,</span>
-<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>    <span class="dv">6</span>: <span class="st">'Other'</span>  <span class="co"># Includes original 6, NaN, and any other values</span></span>
-<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a><span class="co"># Rename index with labels</span></span>
-<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>sex_stats.index <span class="op">=</span> sex_stats.index.<span class="bu">map</span>(sex_mapping)</span>
-<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>race_stats.index <span class="op">=</span> race_stats.index.<span class="bu">map</span>(race_mapping)</span>
-<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>sex_stats</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div id="tbl-sex" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="5" data-outputid="46bc88aa-acb2-4917-db8d-a30f7a07d1da" data-tbl-num="true">
+<div id="tbl-sex" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-outputid="46bc88aa-acb2-4917-db8d-a30f7a07d1da" data-tbl-num="true" data-execution_count="5">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-sex-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;1: “Sex Statistics”
@@ -791,11 +655,7 @@ Table&nbsp;1: “Sex Statistics”
 </div>
 </div>
 <div class="cell" data-outputid="1b35e920-c83c-4946-8add-c94f89a958a5" data-tbl-num="true" data-execution_count="6">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>race_stats</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div id="tbl-race" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="6" data-outputid="1b35e920-c83c-4946-8add-c94f89a958a5" data-tbl-num="true">
+<div id="tbl-race" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-outputid="1b35e920-c83c-4946-8add-c94f89a958a5" data-tbl-num="true" data-execution_count="6">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-race-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;2: “Race Statistics”
@@ -1149,70 +1009,7 @@ Table&nbsp;2: “Race Statistics”
 <h2 data-number="4.2" class="anchored" data-anchor-id="cronbachs-alpha"><span class="header-section-number">4.2</span> Cronbach’s Alpha</h2>
 <p>Jessica computed Cronbach’s alpha (see <a href="#tbl-cronbach_alpha" class="quarto-xref">Table&nbsp;3</a>) for each multi-item scale as a sanity check to ensure that the composite scores showed adequate internal consistency and were suitable for further analysis. Most scales fell in the acceptable to very reliable range. Markers of Adulthood – Importance, Markers of Adulthood – Achievement, IDEA-8, Mindfulness, Social Media Use, and American Dream all showed acceptable reliability (α ≈ .73–.78), while Subjective Well-Being, Interpersonal Transgressions, Physical Symptoms, and Interpersonal Exploitativeness showed very high reliability (α ≈ .83–.91), with the latter two alphas suggesting that items may be somewhat redundant and could potentially be streamlined in future work. In contrast, Need to Belong, Perceived Stress, NPI-13, and Marriage Opinions had alphas below .70, indicating more questionable internal consistency; we retained these scales due to their theoretical importance but interpret their results with greater caution. Overall, this reliability check supports the use of most composite scores and flags a few scales for more cautious interpretation or possible refinement in later studies.</p>
 <div class="cell" data-outputid="0b48d5fa-4725-4e2b-c910-40b87453efce" data-tbl-num="true" data-note="α > 0.90 - Too high (item redundant), 0.80-0.90 - Very reliable, 0.70-0.79 - Acceptable, < 0.70 - Questionable">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate Cronbach's alphas and store results</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>alpha_results <span class="op">=</span> []</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Define all scales</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>scales <span class="op">=</span> {</span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">'moa1'</span>: [col <span class="cf">for</span> col <span class="kw">in</span> data.columns <span class="cf">if</span> col.startswith(<span class="st">'moa1'</span>)],</span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">'moa2'</span>: [col <span class="cf">for</span> col <span class="kw">in</span> data.columns <span class="cf">if</span> col.startswith(<span class="st">'moa2'</span>)],</span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">'IDEA'</span>: [col <span class="cf">for</span> col <span class="kw">in</span> data.columns <span class="cf">if</span> col.startswith(<span class="st">'IDEA_'</span>)],</span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">'swb'</span>: [col <span class="cf">for</span> col <span class="kw">in</span> data.columns <span class="cf">if</span> col.startswith(<span class="st">'swb_'</span>)],</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">'mindful'</span>: [col <span class="cf">for</span> col <span class="kw">in</span> data.columns <span class="cf">if</span> col.startswith(<span class="st">'mindful_'</span>)],</span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">'belong'</span>: [col <span class="cf">for</span> col <span class="kw">in</span> data.columns <span class="cf">if</span> col.startswith(<span class="st">'belong_'</span>)],</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">'efficacy'</span>: [col <span class="cf">for</span> col <span class="kw">in</span> data.columns <span class="cf">if</span> col.startswith(<span class="st">'efficacy_'</span>)],</span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>    <span class="st">'support'</span>: [col <span class="cf">for</span> col <span class="kw">in</span> data.columns <span class="cf">if</span> col.startswith(<span class="st">'support_'</span>)],</span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    <span class="st">'SocMedia'</span>: [col <span class="cf">for</span> col <span class="kw">in</span> data.columns <span class="cf">if</span> col.startswith(<span class="st">'SocMedia_'</span>)],</span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>    <span class="st">'usdream'</span>: [col <span class="cf">for</span> col <span class="kw">in</span> data.columns <span class="cf">if</span> col.startswith(<span class="st">'usdream_'</span>)],</span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">'transgres'</span>: [col <span class="cf">for</span> col <span class="kw">in</span> data.columns <span class="cf">if</span> col.startswith(<span class="st">'transgres_'</span>)],</span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    <span class="st">'NPI'</span>: [col <span class="cf">for</span> col <span class="kw">in</span> data.columns <span class="cf">if</span> col.startswith(<span class="st">'NPI'</span>)],</span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>    <span class="st">'stress'</span>: [col <span class="cf">for</span> col <span class="kw">in</span> data.columns <span class="cf">if</span> col.startswith(<span class="st">'stress'</span>)],</span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">'marriage'</span>: [col <span class="cf">for</span> col <span class="kw">in</span> data.columns <span class="cf">if</span> col.startswith(<span class="st">'marriage'</span>)],</span>
-<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>    <span class="st">'physSx'</span>: [col <span class="cf">for</span> col <span class="kw">in</span> data.columns <span class="cf">if</span> col.startswith(<span class="st">'physSx_'</span>)],</span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>    <span class="st">'exploit'</span>: [col <span class="cf">for</span> col <span class="kw">in</span> data.columns <span class="cf">if</span> col.startswith(<span class="st">'exploit'</span>)]</span>
-<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate alphas</span></span>
-<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> scale_code, cols <span class="kw">in</span> scales.items():</span>
-<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">len</span>(cols) <span class="op">&gt;</span> <span class="dv">0</span>:</span>
-<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>        alpha <span class="op">=</span> pg.cronbach_alpha(data<span class="op">=</span>data[cols].dropna())</span>
-<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>        alpha_results.append((scale_code, alpha[<span class="dv">0</span>]))</span>
-<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Create dataframe</span></span>
-<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>alpha_df <span class="op">=</span> pd.DataFrame(alpha_results, columns<span class="op">=</span>[<span class="st">'Scale_Code'</span>, <span class="st">'Cronbach_Alpha'</span>])</span>
-<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a><span class="co"># Create readable scale names mapping</span></span>
-<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>scale_names <span class="op">=</span> {</span>
-<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>    <span class="st">'moa1'</span>: <span class="st">'Markers of Adulthood - Importance'</span>,</span>
-<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>    <span class="st">'moa2'</span>: <span class="st">'Markers of Adulthood - Achievement'</span>,</span>
-<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>    <span class="st">'IDEA'</span>: <span class="st">'Identity Exploration (IDEA-8)'</span>,</span>
-<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>    <span class="st">'swb'</span>: <span class="st">'Subjective Well-Being'</span>,</span>
-<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a>    <span class="st">'mindful'</span>: <span class="st">'Mindfulness'</span>,</span>
-<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>    <span class="st">'belong'</span>: <span class="st">'Need to Belong'</span>,</span>
-<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>    <span class="st">'efficacy'</span>: <span class="st">'Efficacy/Competence'</span>,</span>
-<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>    <span class="st">'support'</span>: <span class="st">'Perceived Social Support'</span>,</span>
-<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a>    <span class="st">'SocMedia'</span>: <span class="st">'Social Media Use'</span>,</span>
-<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a>    <span class="st">'usdream'</span>: <span class="st">'American Dream'</span>,</span>
-<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a>    <span class="st">'transgres'</span>: <span class="st">'Interpersonal Transgressions'</span>,</span>
-<span id="cb8-46"><a href="#cb8-46" aria-hidden="true" tabindex="-1"></a>    <span class="st">'NPI'</span>: <span class="st">'Narcissistic Personality Inventory (NPI-13)'</span>,</span>
-<span id="cb8-47"><a href="#cb8-47" aria-hidden="true" tabindex="-1"></a>    <span class="st">'stress'</span>: <span class="st">'Perceived Stress'</span>,</span>
-<span id="cb8-48"><a href="#cb8-48" aria-hidden="true" tabindex="-1"></a>    <span class="st">'marriage'</span>: <span class="st">'Marriage Opinions'</span>,</span>
-<span id="cb8-49"><a href="#cb8-49" aria-hidden="true" tabindex="-1"></a>    <span class="st">'physSx'</span>: <span class="st">'Physical Symptoms'</span>,</span>
-<span id="cb8-50"><a href="#cb8-50" aria-hidden="true" tabindex="-1"></a>    <span class="st">'exploit'</span>: <span class="st">'Interpersonal Exploitativeness'</span></span>
-<span id="cb8-51"><a href="#cb8-51" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb8-52"><a href="#cb8-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-53"><a href="#cb8-53" aria-hidden="true" tabindex="-1"></a><span class="co"># Apply mapping and reorder columns</span></span>
-<span id="cb8-54"><a href="#cb8-54" aria-hidden="true" tabindex="-1"></a>alpha_df[<span class="st">'Scale_Name'</span>] <span class="op">=</span> alpha_df[<span class="st">'Scale_Code'</span>].<span class="bu">map</span>(scale_names)</span>
-<span id="cb8-55"><a href="#cb8-55" aria-hidden="true" tabindex="-1"></a>alpha_df <span class="op">=</span> alpha_df[[<span class="st">'Scale_Name'</span>, <span class="st">'Cronbach_Alpha'</span>]]</span>
-<span id="cb8-56"><a href="#cb8-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-57"><a href="#cb8-57" aria-hidden="true" tabindex="-1"></a><span class="co"># Round alpha values</span></span>
-<span id="cb8-58"><a href="#cb8-58" aria-hidden="true" tabindex="-1"></a>alpha_df[<span class="st">'Cronbach_Alpha'</span>] <span class="op">=</span> alpha_df[<span class="st">'Cronbach_Alpha'</span>].<span class="bu">round</span>(<span class="dv">3</span>)</span>
-<span id="cb8-59"><a href="#cb8-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-60"><a href="#cb8-60" aria-hidden="true" tabindex="-1"></a>alpha_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div id="tbl-cronbach_alpha" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-outputid="0b48d5fa-4725-4e2b-c910-40b87453efce" data-note="α > 0.90 - Too high (item redundant), 0.80-0.90 - Very reliable, 0.70-0.79 - Acceptable, < 0.70 - Questionable" data-tbl-num="true">
+<div id="tbl-cronbach_alpha" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-note="α > 0.90 - Too high (item redundant), 0.80-0.90 - Very reliable, 0.70-0.79 - Acceptable, < 0.70 - Questionable" data-outputid="0b48d5fa-4725-4e2b-c910-40b87453efce" data-tbl-num="true">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-cronbach_alpha-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;3: “Cronbach’s Alpha for all scales”
@@ -1591,15 +1388,6 @@ Table&nbsp;3: “Cronbach’s Alpha for all scales”
 <h2 data-number="4.4" class="anchored" data-anchor-id="evaluation-matrix"><span class="header-section-number">4.4</span> Evaluation Matrix</h2>
 <p>Model performance was evaluated using metrics appropriate for imbalanced binary outcomes. Because the prevalence of PHQ-15 symptoms varied substantially across items (see <a href="#fig-symptom-prevalence" class="quarto-xref">Figure&nbsp;1</a>), standard accuracy was not considered an adequate indicator of performance. Instead, we used balanced accuracy, ROC–AUC, and the F1 score to provide a more reliable assessment of discrimination and classification quality.</p>
 <div id="cell-fig-symptom-prevalence" class="cell" data-outputid="2cd2a4d5-b320-45b4-e8f3-594e3d86caf1" data-fig-num="true" data-execution_count="15">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>img <span class="op">=</span> mpimg.imread(<span class="st">'somatic-symptom/Result/symptom_prevalence_plot.png'</span>)</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>plt.imshow(img)</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'off'</span>)  <span class="co"># Hide axes</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output cell-output-display">
 <div id="fig-symptom-prevalence" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -1631,16 +1419,7 @@ Figure&nbsp;1: Prevalence of Physical Symptoms
 <section id="model-performance" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="model-performance"><span class="header-section-number">5.1</span> Model Performance</h2>
 <p>Across the thirteen PHQ-15 symptoms, the models displayed substantial variability in predictive performance, and the visualizations collectively illustrate these differences. As shown in <a href="#fig-model-comparison" class="quarto-xref">Figure&nbsp;4</a>, the distribution of best-performing models evaluating by ROC-AUC varied across symptoms. L1-regularized logistic regression emerged as the most successful algorithm overall, producing the top model for five symptoms, whereas the stacking ensemble performed best for four symptoms. Deep-learning and tree-based models were only occasionally optimal, suggesting that the structure linking psychosocial predictors to somatic symptoms is often captured effectively by sparse linear models or hybrid ensembles rather than highly nonlinear approaches.</p>
-<div id="cell-fig-model-distribution-rocauc" class="cell" data-outputid="dfc0730a-8b90-4847-b047-d2172edd3aaa" data-fig-num="true" data-execution_count="12">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>img <span class="op">=</span> mpimg.imread(<span class="st">'somatic-symptom/Result/results_complete_ROC_AUC/visualizations/best_model_distribution.png'</span>)</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>plt.imshow(img)</span>
-<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'off'</span>)  <span class="co"># Hide axes</span></span>
-<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="cell-fig-model-distribution-rocauc" class="cell" data-outputid="dfc0730a-8b90-4847-b047-d2172edd3aaa" data-fig-num="true">
 <div class="cell-output cell-output-display">
 <div id="fig-model-distribution-rocauc" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -1654,16 +1433,7 @@ Figure&nbsp;2: Distribution of best models across symptoms (Based on ROC-AUC)
 </div>
 </div>
 </div>
-<div id="cell-fig-model-distribution-f1" class="cell" data-outputid="ef480b93-f4c1-495b-93d3-ab0ccd50746b" data-fig-num="true" data-execution_count="13">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>img <span class="op">=</span> mpimg.imread(<span class="st">'somatic-symptom/Result/results_complete_F1/visualizations/best_model_distribution.png'</span>)</span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">6</span>))</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>plt.imshow(img)</span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'off'</span>)  <span class="co"># Hide axes</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="cell-fig-model-distribution-f1" class="cell" data-outputid="ef480b93-f4c1-495b-93d3-ab0ccd50746b" data-fig-num="true">
 <div class="cell-output cell-output-display">
 <div id="fig-model-distribution-f1" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -1680,15 +1450,6 @@ Figure&nbsp;3: Distribution of best models across symptoms (Based on F1 score)
 <p>Performance differences across models and symptoms were further illustrated in <a href="#fig-model-comparison" class="quarto-xref">Figure&nbsp;4</a>, which presents the distribution of balanced accuracy, ROC–AUC, and F1 scores across the top-performing algorithms. Balanced accuracy values generally fell between .55 and .65, with few models approaching the 70% benchmark. ROC–AUC values showed stronger discrimination, with many models clustering between .60 and .70, indicating modest but reliable predictive signals for several symptoms. F1 scores revealed the greatest variability, reflecting both class imbalance and heterogeneity in symptom etiology. These distributional patterns demonstrate that although some algorithms performed reasonably well across symptoms, no model consistently achieved high accuracy, highlighting the difficulty of predicting somatic symptoms from psychosocial features alone.</p>
 <p>Besides, balanced accuracy exhibited substantially lower central tendency and wider variability compared to ROC–AUC and F1 scores. This pattern is expected given the severe class imbalance observed for several symptoms (e.g., fainting spells, chest pain), where balanced accuracy is highly sensitive to the low prevalence of the positive class. In contrast, ROC–AUC and F1 scores demonstrated more stable performance across symptoms. For this reason, balanced accuracy was not used as the primary criterion for the following steps of selecting the best-performing model for each symptom.</p>
 <div id="cell-fig-model-comparison" class="cell" data-outputid="58c2586a-d652-44fa-c4f3-8f249ad3fc20" data-fig-num="true" data-execution_count="10">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>img <span class="op">=</span> mpimg.imread(<span class="st">'somatic-symptom/Result/results_complete_F1/visualizations/performance_distribution_boxplot.png'</span>)</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">6</span>))</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>plt.imshow(img)</span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'off'</span>)  <span class="co"># Hide axes</span></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
 <div class="cell-output cell-output-display">
 <div id="fig-model-comparison" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -1703,16 +1464,7 @@ Figure&nbsp;4: Model Performance Distribution Across Symptoms
 </div>
 </div>
 <p>The symptom-level differences are most apparent in <a href="#fig-best-f1" class="quarto-xref">Figure&nbsp;5</a>, which shows the highest F1 score obtained for each symptom. Fatigue was the most predictable outcome, achieving an F1 of .934 using the stacking ensemble, followed by trouble sleeping (F1 = .817) and headache (F1 = .806). These strong values contrast sharply with symptoms such as chest pain (F1 = .398), constipation (F1 = .453), and fainting spells (F1 = .195), all of which proved difficult to classify reliably. These results suggest that psychosocial factors carry more predictive signals for symptoms commonly associated with stress, mood, and psychological functioning, whereas rarer or physiologically driven symptoms contain far less predictable variance in this dataset.</p>
-<div id="cell-fig-best-f1" class="cell" data-outputid="ab06f77d-0ba5-42de-cbed-d952cc9e4413" data-fig-num="true" data-execution_count="17">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>img <span class="op">=</span> mpimg.imread(<span class="st">'somatic-symptom/Result/results_complete_F1/visualizations/best_model_ranking.png'</span>)</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">8</span>))</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>plt.imshow(img)</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'off'</span>)  <span class="co"># Hide axes</span></span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="cell-fig-best-f1" class="cell" data-outputid="ab06f77d-0ba5-42de-cbed-d952cc9e4413" data-fig-num="true">
 <div class="cell-output cell-output-display">
 <div id="fig-best-f1" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -1727,16 +1479,7 @@ Figure&nbsp;5: F1 score of best-performing models for all somatic symptoms
 </div>
 </div>
 <p>A similar pattern appears in <a href="#fig-best-rocauc" class="quarto-xref">Figure&nbsp;6</a>, which reports the highest ROC–AUC achieved for each symptom. Fatigue again showed the strongest discrimination (ROC–AUC = .781), followed by dizziness (.703) and trouble sleeping (.694). Moderate performance was observed for headache (.687), shortness of breath (.689), and heart pounding/racing (.657). Symptoms such as constipation, back pain, and stomach pain showed ROC–AUC values near .61–.63, consistent with limited predictive information. Even the higher-performing symptoms did not substantially exceed the .75 range, indicating that while the models captured some meaningful signal, prediction remained modest rather than strong.</p>
-<div id="cell-fig-best-rocauc" class="cell" data-outputid="fa91745f-0fba-4dfb-c5b8-d9e012713af2" data-fig-num="true" data-execution_count="18">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>img <span class="op">=</span> mpimg.imread(<span class="st">'somatic-symptom/Result/results_complete_ROC_AUC/visualizations/best_model_ranking.png'</span>)</span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">8</span>))</span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>plt.imshow(img)</span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'off'</span>)  <span class="co"># Hide axes</span></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="cell-fig-best-rocauc" class="cell" data-outputid="fa91745f-0fba-4dfb-c5b8-d9e012713af2" data-fig-num="true">
 <div class="cell-output cell-output-display">
 <div id="fig-best-rocauc" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -1757,17 +1500,7 @@ Figure&nbsp;6: ROC–AUC of best-performing models for all somatic symptoms
 <p>To interpret psychological and demographic predictors of somatic symptoms, SHAP values were computed for the best-performing model for each PHQ-15 item. Because SHAP interpretation is only meaningful when a model demonstrates adequate predictive performance, we restricted this analysis to symptoms for which both ROC–AUC and F1 scores indicated reliable discrimination. Based on this criterion (ROC–AUC ≥ .68 and F1 ≥ .55), four symptoms met the threshold for interpretability: fatigue, trouble sleeping, headache, and dizziness. SHAP values for the remaining symptoms were not interpreted, as their models did not capture stable or generalizable patterns.</p>
 <section id="fatigue" class="level3" data-number="5.2.1">
 <h3 data-number="5.2.1" class="anchored" data-anchor-id="fatigue"><span class="header-section-number">5.2.1</span> Fatigue</h3>
-<p>Fatigue exhibited the strongest predictive performance of all symptoms (ROC–AUC = .781; F1 = .934), and its SHAP profile was the most interpretable. As shown in <a href="#fig-shap-fatigue" class="quarto-xref">Figure&nbsp;7</a>, sex was the dominant predictor, with female participants demonstrating higher predicted fatigue risk. Psychological resources—including mindfulness, subjective well-being, and need to belong—contributed strongly and negatively, indicating that higher self-regulation, emotional stability, and social connectedness reduced predicted fatigue. These patterns are consistent with literature linking fatigue in young adults to stress regulation, identity-related strain, and reduced psychosocial resources.</p>
-<div id="cell-fig-shap-fatigue" class="cell" data-outputid="fead7e01-38da-48d0-b635-068a8926a9cb" data-fig-num="true" data-execution_count="19">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>img <span class="op">=</span> mpimg.imread(<span class="st">'somatic-symptom/Result/shap_analysis_ROC_AUC/physSx_12_RandomForest_shap_predictors.png'</span>)</span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">8</span>))</span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>plt.imshow(img)</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'off'</span>)  <span class="co"># Hide axes</span></span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="cell-fig-shap-fatigue" class="cell" data-outputid="fead7e01-38da-48d0-b635-068a8926a9cb" data-fig-num="true">
 <div class="cell-output cell-output-display">
 <div id="fig-shap-fatigue" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -1781,20 +1514,8 @@ Figure&nbsp;7: SHAP feature importance for Fatigue predicted by random forest mo
 </div>
 </div>
 </div>
-</section>
-<section id="trouble-sleeping" class="level3" data-number="5.2.2">
-<h3 data-number="5.2.2" class="anchored" data-anchor-id="trouble-sleeping"><span class="header-section-number">5.2.2</span> Trouble Sleeping</h3>
-<p>Trouble sleeping also showed robust model performance (ROC–AUC = .694; F1 = .817). SHAP values (<a href="#fig-shap-sleeping" class="quarto-xref">Figure&nbsp;8</a>) indicated that efficacy/competence, perceived social support, and need to belong were among the strongest predictors. Higher efficacy and support were protective, whereas lower belonging was associated with increased predicted sleep problems. Disability identity also contributed positively to sleep disturbance risk. Overall, these findings align with prior evidence that sleep problems are closely related to emotional resources, social connection, and perceived adequacy in important life domains.</p>
-<div id="cell-fig-shap-sleeping" class="cell" data-outputid="cc543234-c8ef-46a6-84a0-8c21b9317d7b" data-fig-num="true" data-execution_count="21">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>img <span class="op">=</span> mpimg.imread(<span class="st">'somatic-symptom/Result/shap_analysis_ROC_AUC/physSx_13_LR-L1_shap_predictors.png'</span>)</span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">8</span>))</span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>plt.imshow(img)</span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'off'</span>)  <span class="co"># Hide axes</span></span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<p>Fatigue exhibited the strongest predictive performance of all symptoms (ROC–AUC = .781; F1 = .934), and its SHAP profile was the most interpretable. As shown in <a href="#fig-shap-fatigue" class="quarto-xref">Figure&nbsp;7</a>, sex was the dominant predictor, with female participants demonstrating higher predicted fatigue risk. Psychological resources—including mindfulness, subjective well-being, and need to belong—contributed strongly and negatively, indicating that higher self-regulation, emotional stability, and social connectedness reduced predicted fatigue. These patterns are consistent with literature linking fatigue in young adults to stress regulation, identity-related strain, and reduced psychosocial resources. ### Trouble Sleeping</p>
+<div id="cell-fig-shap-sleeping" class="cell" data-outputid="cc543234-c8ef-46a6-84a0-8c21b9317d7b" data-fig-num="true">
 <div class="cell-output cell-output-display">
 <div id="fig-shap-sleeping" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -1808,20 +1529,8 @@ Figure&nbsp;8: SHAP feature importance for Trouble Sleeping predicted by the Las
 </div>
 </div>
 </div>
-</section>
-<section id="headache" class="level3" data-number="5.2.3">
-<h3 data-number="5.2.3" class="anchored" data-anchor-id="headache"><span class="header-section-number">5.2.3</span> Headache</h3>
-<p>Headache demonstrated moderately strong predictive performance (ROC–AUC = .687; F1 = .806). SHAP values (<a href="#fig-shap-headache" class="quarto-xref">Figure&nbsp;9</a>) revealed that interpersonal transgressions, social media behaviors related to forming new connections, and subjective well-being were the most influential predictors. These results suggest that interpersonal strain, conflict, and inconsistent social engagement may play meaningful roles in headache experiences among young adults. Reduced subjective well-being again appeared as a broad risk indicator.</p>
-<div id="cell-fig-shap-headache" class="cell" data-outputid="28355a26-e286-4b37-c4c5-3a654151b818" data-fig-num="true" data-execution_count="22">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>img <span class="op">=</span> mpimg.imread(<span class="st">'somatic-symptom/Result/shap_analysis_ROC_AUC/physSx_4_ExtraTrees_shap_predictors.png'</span>)</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">8</span>))</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>plt.imshow(img)</span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'off'</span>)  <span class="co"># Hide axes</span></span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<p>Trouble sleeping also showed robust model performance (ROC–AUC = .694; F1 = .817). SHAP values (<a href="#fig-shap-sleeping" class="quarto-xref">Figure&nbsp;8</a>) indicated that efficacy/competence, perceived social support, and need to belong were among the strongest predictors. Higher efficacy and support were protective, whereas lower belonging was associated with increased predicted sleep problems. Disability identity also contributed positively to sleep disturbance risk. Overall, these findings align with prior evidence that sleep problems are closely related to emotional resources, social connection, and perceived adequacy in important life domains. ### Headache</p>
+<div id="cell-fig-shap-headache" class="cell" data-outputid="28355a26-e286-4b37-c4c5-3a654151b818" data-fig-num="true">
 <div class="cell-output cell-output-display">
 <div id="fig-shap-headache" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -1835,17 +1544,12 @@ Figure&nbsp;9: SHAP feature importance for for Headache predicted by the ExtraTr
 </div>
 </div>
 </div>
+<p>Headache demonstrated moderately strong predictive performance (ROC–AUC = .687; F1 = .806). SHAP values (<a href="#fig-shap-headache" class="quarto-xref">Figure&nbsp;9</a>) revealed that interpersonal transgressions, social media behaviors related to forming new connections, and subjective well-being were the most influential predictors. These results suggest that interpersonal strain, conflict, and inconsistent social engagement may play meaningful roles in headache experiences among young adults. Reduced subjective well-being again appeared as a broad risk indicator.</p>
+</section>
+<section id="dizziness" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="dizziness"><span class="header-section-number">5.2.2</span> Dizziness</h3>
 <p>Dizziness was the only additional symptom that met the interpretability threshold (ROC–AUC = .703; F1 = .547). Although F1 was lower than for other interpretable symptoms, ROC–AUC exceeded .70, and SHAP patterns were stable across model runs. As shown in <a href="#fig-shap-dizziness" class="quarto-xref">Figure&nbsp;10</a>, the strongest predictors were interpersonal exploitativeness, subjective well-being, need to belong, and efficacy/competence. These predictors suggest that dizziness may be associated with stress-sensitive interpersonal dynamics, lower emotional well-being, and reduced perceived capability in daily functioning. Given the modest performance, these findings should be considered preliminary.</p>
-<div id="cell-fig-shap-dizziness" class="cell" data-outputid="7893002b-04e1-4643-b629-ee398d895eac" data-fig-num="true" data-execution_count="23">
-<details class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>img <span class="op">=</span> mpimg.imread(<span class="st">'somatic-symptom/Result/shap_analysis_ROC_AUC/physSx_6_ExtraTrees_shap_predictors.png'</span>)</span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">8</span>))</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>plt.imshow(img)</span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>plt.axis(<span class="st">'off'</span>)  <span class="co"># Hide axes</span></span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
+<div id="cell-fig-shap-dizziness" class="cell" data-outputid="7893002b-04e1-4643-b629-ee398d895eac" data-fig-num="true">
 <div class="cell-output cell-output-display">
 <div id="fig-shap-dizziness" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
@@ -1860,8 +1564,8 @@ Figure&nbsp;10: SHAP feature importance for for Dizziness predicted by the Extra
 </div>
 </div>
 </section>
-<section id="symptoms-with-insufficient-predictive-performance" class="level3" data-number="5.2.4">
-<h3 data-number="5.2.4" class="anchored" data-anchor-id="symptoms-with-insufficient-predictive-performance"><span class="header-section-number">5.2.4</span> Symptoms With Insufficient Predictive Performance</h3>
+<section id="symptoms-with-insufficient-predictive-performance" class="level3" data-number="5.2.3">
+<h3 data-number="5.2.3" class="anchored" data-anchor-id="symptoms-with-insufficient-predictive-performance"><span class="header-section-number">5.2.3</span> Symptoms With Insufficient Predictive Performance</h3>
 <p>Several symptoms, including fainting spells, constipation/diarrhea, chest pain, nausea/indigestion, shortness of breath, heart palpitations, back pain, stomach pain, and limb/joint pain, showed low ROC–AUC, low F1, or both. Because the models for these symptoms did not reliably discriminate symptomatic from non-symptomatic participants, SHAP values were not interpreted. Importantly, the absence of predictive signal is itself informative: these symptoms may be less directly influenced by psychosocial factors measured in the EAMMi2 dataset and may instead reflect more heterogeneous or physiologically driven processes. This pattern reinforces the importance of symptom-specific modeling rather than relying on PHQ-15 total scores.</p>
 </section>
 </section>
