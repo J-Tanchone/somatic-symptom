@@ -52,5 +52,10 @@ For each symptom, we benchmark the following models:
 - Neural Network: TabNet-Deep
   - Deep learning approach tailored for tabular data with built-in feature selection/attention.
 ## Findings
-- Across most symptoms, psychological and psychosocial variables (e.g., perceived stress, well-being, mindfulness, belonging, social conflict) show much stronger feature importance than demographics like age or gender.
+- Different symptoms have different predictors.
+- Psychosocial factors matter more for some symptoms (fatigue, sleep problem, headache, dizziness).
+- Physiological factors likely play a larger role for others (chest pain, shortness of breath).
+## Limitation
+- The Dataset only includes young adults, Generalizability
+- Limited symptom set in dataset
 
