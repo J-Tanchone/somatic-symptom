@@ -1,4 +1,5 @@
 # Predicting Risk Factors of Somatic Symptoms in Young Adults Using Machine Learning
+**Author: Jessica Tanchone & Miao Yu**
 This repository contains code and materials for a project modeling item-level PHQ-15 somatic symptoms in young adults using a range of machine learning approaches and SHAP-based interpretation.
 ## Project Overview
 The Patient Health Questionnaire–15 (PHQ-15) is typically scored as a single total somatic symptom burden, but individual symptoms (e.g., fatigue, dizziness, chest pain, sleep problems) may be driven by different psychological, behavioral, and demographic factors. Collapsing them into one total score can hide meaningful heterogeneity.
