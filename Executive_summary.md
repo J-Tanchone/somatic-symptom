@@ -31,9 +31,7 @@ This project applies interpretable machine learning to understand how psychologi
 * Synthesized theoretical insights connecting psychological constructs (e.g., stress, mindfulness, belonging) to somatic outcomes.
 * Documented modeling code across `somatic_symptom_prediction_complete.py`, `somatic_symptom_prediction_GLMnet.py`, and `shap_value.py`.
 
-## **Teammate Contributions**
-
-*(Fill in with details if needed; placeholder text below.)*
+## **Miao Yu**
 
 * Conducted exploratory data analysis and initial feature engineering.
 * Contributed to neural network model development and parameter tuning.
