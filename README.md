@@ -58,4 +58,5 @@ For each symptom, we benchmark the following models:
 ## Limitation
 - The Dataset only includes young adults, Generalizability
 - Limited symptom set in dataset
+- Due to time limits, no factor analysis are did on PHQ-15
 
