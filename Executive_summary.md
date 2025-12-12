@@ -2,7 +2,7 @@
 
 ## **Project Overview**
 
-This project applies interpretable machine learning to understand how psychological factors predict **13 individual somatic symptoms** from the PHQ-15. Rather than collapsing symptoms into a single total score, we modeled each symptom separately using data from over 3,000 college students. Our goal was to identify which psychosocial variables—such as stress, mindfulness, social support, self-efficacy, and well-being—best predict specific bodily symptoms, and to evaluate how predictable each symptom is across multiple algorithms. This approach provides a more symptom-specific, clinically meaningful picture of somatic presentations than traditional summary-score analyses.
+This project applies interpretable machine learning to understand how psychological factors predict **13 individual somatic symptoms** from the PHQ-15. Rather than collapsing symptoms into a single total score, we modeled each symptom separately using data from over 4,000 college students. Our goal was to identify which psychosocial variables—such as stress, mindfulness, social support, self-efficacy, and well-being—best predict specific bodily symptoms, and to evaluate how predictable each symptom is across multiple algorithms. This approach provides a more symptom-specific, clinically meaningful picture of somatic presentations than traditional summary-score analyses.
 
 ## **Overall Scope of Work Completed**
 
