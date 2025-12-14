@@ -2,7 +2,7 @@
 
 ## **Project Overview**
 
-This project applies interpretable machine learning to understand how psychological factors predict **13 individual somatic symptoms** from the PHQ-15. Rather than collapsing symptoms into a single total score, we modeled each symptom separately using data from over 4,000 college students. Our goal was to identify which psychosocial variables—such as stress, mindfulness, social support, self-efficacy, and well-being—best predict specific bodily symptoms, and to evaluate how predictable each symptom is across multiple algorithms. This approach provides a more symptom-specific, clinically meaningful picture of somatic presentations than traditional summary-score analyses.
+This project applies interpretable machine learning to understand how psychological factors predict **13 individual somatic symptoms** from the PHQ-15. Rather than collapsing symptoms into a single total score, we modeled each symptom separately using data from over 4,000 college students. Our goal was to identify which psychosocial variables, such as stress, mindfulness, social support, self-efficacy, and well-being—best predict specific bodily symptoms, and to evaluate how predictable each symptom is across multiple algorithms. This approach provides a more symptom-specific, clinically meaningful picture of somatic presentations than traditional summary-score analyses.
 
 ## **Overall Scope of Work Completed**
 
@@ -33,10 +33,13 @@ This project applies interpretable machine learning to understand how psychologi
 
 ## **Miao Yu**
 
-* Conducted exploratory data analysis and initial feature engineering.
-* Contributed to neural network model development and parameter tuning.
-* Assisted with scaling, normalization, and dataset preparation.
-* Helped validate model outputs and conduct error checking.
+* Initiated and designed the overall study, including the symptom-level modeling framework and core research questions.
+* Proposed modeling individual PHQ-15 symptoms rather than relying on a total score, enabling symptom-specific interpretation.
+* Defined the comparative machine-learning strategy, including evaluation of multiple algorithms and use of SHAP values for interpretability.
+* Led dataset construction and preprocessing, including outcome coding, variable selection, and data integration.
+* Conducted exploratory data analysis to inform modeling decisions.
+* Developed and implemented neural network models, including initial architecture design and parameter tuning.
+* Validated model outputs and ensured consistency and quality across analyses.
 
 ---
 
@@ -51,26 +54,26 @@ This project applies interpretable machine learning to understand how psychologi
 
 # **Recommended Future Directions**
 
-## **1. Expand the Predictor Space**
+**1. Expand the Predictor Space**
 
 * Incorporate **behavioral data, EMA, social activity metrics, sleep logs**, or physiological markers if available.
 * Add non-linear interactions using domain-informed feature engineering.
 
-## **2. Improve Modeling of Low-Base-Rate Symptoms**
+**2. Improve Modeling of Low-Base-Rate Symptoms**
 
 * Apply techniques suited for extreme imbalance (e.g., focal loss, SMOTE variants).
 * Consider hierarchical or multi-task models that borrow strength across symptoms.
 
-## **3. Clinical & Theoretical Integration**
+**3. Clinical & Theoretical Integration**
 
 * Use symptom-specific findings to form **hypothesis-driven psychological models** of somatic processes (e.g., stress-recovery cycles).
 * Map SHAP-derived features to clinical constructs like emotion regulation, perceived control, or health anxiety.
 
-## **4. Develop a Reproducible Package**
+**4. Develop a Reproducible Package**
 
 * Turn the full pipeline into a **reusable module** for future students or collaborators, enabling plug-and-play symptom prediction.
 
-## **5. Longitudinal & Cross-Dataset Validation**
+**5. Longitudinal & Cross-Dataset Validation**
 
 * Validate models on new populations or cultural groups.
 * Evaluate whether predictors change across developmental stages or stress contexts.
