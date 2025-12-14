@@ -38,16 +38,16 @@ Creates psychological scale scores by averaging survey items within each constru
 ### Exploratory Data Analysis (Cells 14-20) - Miao & Jessica
 Generates histograms showing distributions of all numeric predictors. Creates correlation heatmap to identify relationships between psychological variables. Calculates prevalence ratios for each symptom to understand class imbalance (most symptoms are relatively rare, occurring in 10-30% of participants).
 
-### Train-Test Split (Cell 25) - Miao
+### Train-Test Split (Cell 22) - Miao
 Creates separate 70-30 stratified splits for each of the 13 symptoms. Stratification ensures both training and test sets maintain the same proportion of symptomatic vs. non-symptomatic cases, which is crucial given the class imbalance.
 
-### Model 1: Logistic Regression (Cells 30-35) - Jessica
+### Model 1: Logistic Regression (Cells 25-29) - Jessica
 Builds a pipeline that standardizes numeric features, one-hot encodes categorical variables, applies SMOTE to oversample the minority class in training data, then fits a logistic regression model with L2 regularization. SMOTE helps the model learn from artificially generated examples of the underrepresented symptom-present class. Evaluates each symptom using balanced accuracy, ROC-AUC, and F1-score. Extracts feature importance from coefficient magnitudes.
 
-### Model 2: Random Forest (Cells 37-40) - Miao & Jessica
+### Model 2: Random Forest (Cells 31-34) - Miao & Jessica
 Uses GridSearchCV to search over hyperparameter combinations (number of trees, max depth, minimum samples for splitting/leaf). Finds optimal settings via 5-fold cross-validation on training data. Tests the best model on held-out test set. Applies TreeExplainer from SHAP library to understand which features drive predictions. Creates three SHAP visualizations: summary plot showing all features, bar plot of top 25 features, and force plot explaining a single prediction.
 
-### Model 3: Neural Network (Cells 44-47) - Miao
+### Model 3: Neural Network (Cells 35-39) - Miao
 Defines a 4-layer architecture (128→64→32→1 neurons) with dropout regularization to prevent overfitting. Implements manual 5-fold stratified cross-validation because KerasClassifier sometimes has compatibility issues. Computes class weights to handle imbalance by giving more importance to minority class during training. Uses early stopping to halt training when validation performance stops improving. Saves the best model across all folds. Applies SHAP's KernelExplainer or GradientExplainer (model-agnostic methods) since TreeExplainer doesn't work with neural networks.
 
 ### Key Takeaway
