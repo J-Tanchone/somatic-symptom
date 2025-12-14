@@ -22,32 +22,32 @@ This project predicts 13 binary somatic symptoms (physical complaints like pain,
 
 ---
 
-# FILE 1: Binary_Somatic_symptom_v1.ipynb
+# FILE 1: Binary_Somatic_symptom_v1.ipynb - Miao & Jessica
 
 ## Purpose
 **Initial exploration notebook** to prototype the modeling pipeline in an interactive Google Colab environment. Tests 3 model types (Logistic Regression, Random Forest, Neural Network) with SHAP analysis to establish baseline performance and validate the approach before production runs.
 
 ## What It Does
 
-### Setup (Cells 0-7)
-Installs packages (shap, imblearn, tensorflow, pingouin) and clones the GitHub repository containing the dataset. Loads the main data file (EAMMi2-Data1.2.xlsx) with 328 participants and 928 raw variables.
+### Setup (Cells 1-8) - Miao
+Installs packages (shap, imblearn, tensorflow, pingouin) and clones the GitHub repository containing the dataset. Loads the main data file (EAMMi2-Data1.2.xlsx) with 3182 participants and 328 raw variables.
 
-### Feature Engineering (Cell 8)
+### Feature Engineering (Cell 9) - Miao
 Creates psychological scale scores by averaging survey items within each construct (stress, social support, belonging, mindfulness, self-efficacy, etc.). Generates about 15-20 mean scores representing different psychological domains. Recodes categorical variables like sibling status and parental marriage.
 
-### Exploratory Data Analysis (Cells 14-20)
+### Exploratory Data Analysis (Cells 14-20) - Miao & Jessica
 Generates histograms showing distributions of all numeric predictors. Creates correlation heatmap to identify relationships between psychological variables. Calculates prevalence ratios for each symptom to understand class imbalance (most symptoms are relatively rare, occurring in 10-30% of participants).
 
-### Train-Test Split (Cell 25)
+### Train-Test Split (Cell 25) - Miao
 Creates separate 70-30 stratified splits for each of the 13 symptoms. Stratification ensures both training and test sets maintain the same proportion of symptomatic vs. non-symptomatic cases, which is crucial given the class imbalance.
 
-### Model 1: Logistic Regression (Cells 30-35)
+### Model 1: Logistic Regression (Cells 30-35) - Jessica
 Builds a pipeline that standardizes numeric features, one-hot encodes categorical variables, applies SMOTE to oversample the minority class in training data, then fits a logistic regression model with L2 regularization. SMOTE helps the model learn from artificially generated examples of the underrepresented symptom-present class. Evaluates each symptom using balanced accuracy, ROC-AUC, and F1-score. Extracts feature importance from coefficient magnitudes.
 
-### Model 2: Random Forest (Cells 37-40)
+### Model 2: Random Forest (Cells 37-40) - Miao & Jessica
 Uses GridSearchCV to search over hyperparameter combinations (number of trees, max depth, minimum samples for splitting/leaf). Finds optimal settings via 5-fold cross-validation on training data. Tests the best model on held-out test set. Applies TreeExplainer from SHAP library to understand which features drive predictions. Creates three SHAP visualizations: summary plot showing all features, bar plot of top 25 features, and force plot explaining a single prediction.
 
-### Model 3: Neural Network (Cells 44-47)
+### Model 3: Neural Network (Cells 44-47) - Miao
 Defines a 4-layer architecture (128→64→32→1 neurons) with dropout regularization to prevent overfitting. Implements manual 5-fold stratified cross-validation because KerasClassifier sometimes has compatibility issues. Computes class weights to handle imbalance by giving more importance to minority class during training. Uses early stopping to halt training when validation performance stops improving. Saves the best model across all folds. Applies SHAP's KernelExplainer or GradientExplainer (model-agnostic methods) since TreeExplainer doesn't work with neural networks.
 
 ### Key Takeaway
@@ -55,7 +55,7 @@ This notebook validates that ML can predict somatic symptoms from psychological 
 
 ---
 
-# FILES 2 & 3: somatic_symptom_prediction_complete.py + somatic_symptom_prediction_glmnet.py
+# FILES 2 & 3: somatic_symptom_prediction_complete.py + somatic_symptom_prediction_glmnet.py - Jessica
 
 ## Purpose
 **Production pipelines** that implement the full modeling workflow at scale. These scripts run unattended for 28-54 hours to train comprehensive model ensembles. They share the same data processing and evaluation logic but differ in which models they train.
@@ -192,7 +192,7 @@ Creates 6 publication-quality plots at 300 DPI:
 
 ---
 
-# FILE 4: shap_value.py
+# FILE 4: shap_value.py - Jessica
 
 ## Purpose
 **Feature importance analysis** that explains which psychological predictors drive somatic symptom predictions. Runs separately after models are trained because SHAP computation is computationally expensive (8-12 hours for all symptoms). Loads saved models from complete.py and glmnet.py, computes SHAP values, and generates interpretable visualizations.
